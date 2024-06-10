@@ -14,7 +14,13 @@ body {
 }
 
 .container {
-  max-width: 1460px;
+  max-width: 1140px;
+  padding: 0 10px;
+  margin: 0 auto;
+}
+
+.container-fluid {
+  max-width: 1420px;
   padding: 0 10px;
   margin: 0 auto;
 }
@@ -56,4 +62,9 @@ body {
   letter-spacing: -0.03em;
   color: #fff;
   font-family: "Inter", sans-serif;
+}
+.main-link {
+  border-bottom: 1px solid var(--black-color);
+  padding-right: 20px;
+  position: relative;
 }

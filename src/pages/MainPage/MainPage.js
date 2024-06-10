@@ -2,6 +2,7 @@ import "./mainPage.scss";
 
 //images
 import promo from "./images/promo.png";
+import promotion from "./images/promotion.png";
 
 //components
 import { collections } from "../../helpers/collections/collections";
@@ -86,6 +87,27 @@ const MainPage = () => {
                 />
               );
             })}
+          </div>
+        </div>
+      </div>
+
+      <div className="promotion">
+        <div className="container-fluid">
+          <div className="promotion__inner">
+            <img src={promotion} alt="" className="promotion__img" />
+            <div className="promotion__info">
+              <h6 className="promotion__info-subtitle">SALE UP TO 35% OFF</h6>
+              <h4 className="promotion__info-title">
+                HUNDREDS of New lower prices!
+              </h4>
+              <p className="promotion__info-text">
+                It’s more affordable than ever to give every room in your home a
+                stylish makeover
+              </p>
+              <a href="" className="promotion__info-link main-link">
+                Shop Now
+              </a>
+            </div>
           </div>
         </div>
       </div>
