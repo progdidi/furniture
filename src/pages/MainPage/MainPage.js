@@ -7,6 +7,9 @@ import promo from "./images/promo.png";
 import { collections } from "../../helpers/collections/collections";
 import CollectionItem from "../../components/collectionItem/CollectionItem";
 
+import ProductCard from "../../components/productCard/ProductCard";
+import { products } from "../../helpers/products/products";
+
 const MainPage = () => {
   return (
     <>
@@ -37,6 +40,29 @@ const MainPage = () => {
                   name={collection.name}
                   img={collection.img}
                   key={collection.id}
+                />
+              );
+            })}
+          </div>
+        </div>
+      </section>
+
+      <section className="arrivals">
+        <div className="container">
+          <div className="section__top">
+            <h3 className="arrivals__title section__title">New Arrivals</h3>
+            <a href="" className="arrivals__link section__link">
+              More Products
+            </a>
+          </div>
+
+          <div className="arrivals__items">
+            {products.map((product) => {
+              return (
+                <ProductCard
+                  name={product.name}
+                  price={product.price}
+                  key={product.id}
                 />
               );
             })}

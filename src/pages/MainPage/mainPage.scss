@@ -14,3 +14,12 @@
     }
   }
 }
+
+.arrivals {
+  padding-bottom: 52px;
+  &__items {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+  }
+}
