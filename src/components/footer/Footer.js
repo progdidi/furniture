@@ -1,5 +1,7 @@
 import "./footer.scss";
 
+import SocialList from "./socialList/SocialList";
+
 const Footer = () => {
   return (
     <footer className="footer">
@@ -9,6 +11,7 @@ const Footer = () => {
             <a href="" className="footer-top__logo">
               Furniture
             </a>
+            <div className="divider">|</div>
             <p className="footer-top__text">Gift & Decoration Store</p>
           </div>
           <nav className="footer-menu">
@@ -53,6 +56,8 @@ const Footer = () => {
               Terms of Use
             </a>
           </div>
+
+          <SocialList/>
         </div>
       </div>
     </footer>

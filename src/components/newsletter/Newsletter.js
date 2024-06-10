@@ -11,7 +11,7 @@ const Newsletter = () => {
           Sign up for deals, new products and promotions
         </p>
         <form action="" className="newsletter-form">
-          <input type="text" className="newsletter-form__input" />
+          <input type="text" className="newsletter-form__input" placeholder="Email address"/>
           <button className="newsletter-form__btn">Signup</button>
         </form>
       </div>
