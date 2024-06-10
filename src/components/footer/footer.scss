@@ -1,0 +1,18 @@
+.footer {
+  color: #fff;
+  background-color: var(--black-color);
+  padding-top: 80px;
+  padding-bottom: 32px;
+  &-top {
+    display: flex;
+    align-items: center;
+    .footer-menu__list {
+      display: flex;
+      align-items: center;
+    }
+  }
+  &-bottom {
+    display: flex;
+    align-items: center;
+  }
+}
