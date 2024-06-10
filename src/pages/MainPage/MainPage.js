@@ -14,6 +14,9 @@ import { products } from "../../helpers/products/products";
 import BenefitItem from "./benefitItem/BenefitItem";
 import { benefits } from "../../helpers/benefits/benefits";
 
+import ArticlesItem from "../../components/articlesItem/ArticlesItem";
+import { articles } from "../../helpers/articles/articles";
+
 const MainPage = () => {
   return (
     <>
@@ -91,7 +94,7 @@ const MainPage = () => {
         </div>
       </div>
 
-      <div className="promotion">
+      <section className="promotion">
         <div className="container-fluid">
           <div className="promotion__inner">
             <img src={promotion} alt="" className="promotion__img" />
@@ -110,7 +113,29 @@ const MainPage = () => {
             </div>
           </div>
         </div>
-      </div>
+      </section>
+
+      <section className="articles">
+        <div className="container">
+          <div className="section__top">
+            <h3 className="articles__title section__title">Articles</h3>
+            <a href="" className="articles__link section__link">
+              More Articles
+            </a>
+          </div>
+          <div className="articles__inner">
+            {articles.map((article) => {
+              return (
+                <ArticlesItem
+                  img={article.img}
+                  title={article.title}
+                  key={article.id}
+                />
+              );
+            })}
+          </div>
+        </div>
+      </section>
     </>
   );
 };
