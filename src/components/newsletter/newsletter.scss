@@ -1,0 +1,18 @@
+.newsletter {
+  background-image: url("./newsletter.png");
+  padding-top: 101px;
+  padding-bottom: 93px;
+  text-align: center;
+  &-form {
+    width: 488px;
+    margin: 0 auto;
+    border-bottom: 1px solid #6c7275;
+    padding: 12px 0;
+    padding-left: 58px;
+    &__input {
+      background-color: transparent;
+      border: none;
+      width: 100%;
+    }
+  }
+}

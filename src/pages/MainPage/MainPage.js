@@ -17,6 +17,8 @@ import { benefits } from "../../helpers/benefits/benefits";
 import ArticlesItem from "../../components/articlesItem/ArticlesItem";
 import { articles } from "../../helpers/articles/articles";
 
+import Newsletter from "../../components/newsletter/Newsletter";
+
 const MainPage = () => {
   return (
     <>
@@ -136,6 +138,8 @@ const MainPage = () => {
           </div>
         </div>
       </section>
+
+      <Newsletter />
     </>
   );
 };
