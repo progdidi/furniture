@@ -1,0 +1,27 @@
+.collection-item {
+  position: relative;
+  background-color: #f3f5f7;
+  &__info {
+    position: absolute;
+    left: 32px;
+    bottom: 40px;
+  }
+  &__title {
+    font-weight: 500;
+    font-size: 34px;
+    line-height: 112%;
+    letter-spacing: -0.02em;
+  }
+
+  &__img {
+  }
+
+  &__link {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 175%;
+    letter-spacing: -0.03em;
+    padding-right: 20px;
+    border-bottom: 1px solid #000;
+  }
+}

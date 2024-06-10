@@ -1,0 +1,16 @@
+.promo {
+  margin-bottom: 40px;
+}
+
+.collection {
+  margin-bottom: 48px;
+  &__inner {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 320px);
+    gap: 24px;
+    .collection-item:first-child {
+      grid-row: 1/3;
+    }
+  }
+}
