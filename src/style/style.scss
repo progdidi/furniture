@@ -19,6 +19,31 @@ body {
   margin: 0 auto;
 }
 
+.section__title {
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 110%;
+  letter-spacing: -0.01em;
+}
+
+.section__top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 48px;
+}
+
+.section__link {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 175%;
+  letter-spacing: -0.03em;
+  font-family: "Inter", sans-serif;
+  color: var(--black-color);
+  border-bottom: 1px solid var(--black-color);
+  padding-right: 20px;
+}
+
 .main-btn {
   background-color: var(--black-color);
   border-radius: 8px;
