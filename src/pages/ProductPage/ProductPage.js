@@ -56,24 +56,30 @@ const ProductPage = () => {
               </div>
 
               <div className="product-color">
-                <div className="product-color__item">
-                  <img src="" alt="" className="product-color__item-img" />
-                </div>
-                <div className="product-color__item">
-                  <img src="" alt="" className="product-color__item-img" />
-                </div>
-                <div className="product-color__item">
-                  <img src="" alt="" className="product-color__item-img" />
-                </div>
-                <div className="product-color__item">
-                  <img src="" alt="" className="product-color__item-img" />
+                <p className="product-color__text">Choose Color</p>
+                <div className="product-color__main">Black</div>
+                <div className="product-color__items">
+                  <div className="product-color__item">
+                    <img src="" alt="" className="product-color__item-img" />
+                  </div>
+                  <div className="product-color__item">
+                    <img src="" alt="" className="product-color__item-img" />
+                  </div>
+                  <div className="product-color__item">
+                    <img src="" alt="" className="product-color__item-img" />
+                  </div>
+                  <div className="product-color__item">
+                    <img src="" alt="" className="product-color__item-img" />
+                  </div>
                 </div>
               </div>
 
               <div className="product__buttons">
                 <button className="product-btn"></button>
-                <button className="product-btn">Wishlist</button>
-                <button className="product-btn main-btn">Add to Cart</button>
+                <button className="product-btn like">Wishlist</button>
+                <button className="product-btn basket main-btn">
+                  Add to Cart
+                </button>
               </div>
 
               <div className="product__tags">
