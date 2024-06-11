@@ -2,11 +2,12 @@
   padding-top: 56px;
   margin-bottom: 40px;
   &__inner {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
     gap: 63px;
     align-items: flex-start;
     .product-media {
-      width: 50%;
+      width: 100%;
       .product-slider {
         &__main {
           margin-bottom: 24px;
@@ -20,6 +21,11 @@
           display: grid;
           grid-template-columns: repeat(3, 1fr);
           gap: 24px;
+          .product-slider__item {
+            width: 167px;
+            height: 167px;
+            background-color: #000;
+          }
         }
       }
     }

@@ -1,0 +1,36 @@
+.review-item {
+  display: flex;
+  gap: 40px;
+  padding: 24px 0;
+  border-bottom: 1px solid #e8ecef;
+  &__img {
+    width: 72px;
+    height: 72px;
+  }
+  &__info {
+    &-title {
+      font-weight: 600;
+      font-size: 20px;
+      line-height: 160%;
+      color: var(--black-color);
+      margin-bottom: 16px;
+    }
+    &-rating {
+      margin-bottom: 16px;
+    }
+    &-text {
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 162%;
+      color: #353945;
+      margin-bottom: 24px;
+    }
+    .review-item__buttons {
+      font-weight: 600;
+      font-size: 12px;
+      line-height: 167%;
+      color: #23262f;
+      margin-left: 112px;
+    }
+  }
+}
