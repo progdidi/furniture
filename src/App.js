@@ -5,21 +5,19 @@ import ProductPage from "./pages/ProductPage/ProductPage";
 import ShopPage from "./pages/shopPage/ShopPage";
 import BlogPage from "./pages/blogPage/BlogPage";
 
-
 function App() {
-
   return (
     <div className="App">
-      <Header/>
+      <Header />
 
-        <main className="main">
-          {/* <MainPage/> */}
-          <ProductPage/>
-          {/* <ShopPage/> */}
-          {/* <BlogPage/> */}
-        </main>
+      <main className="main">
+        {/* <MainPage/> */}
+        {/* <ProductPage/> */}
+        <ShopPage />
+        {/* <BlogPage/> */}
+      </main>
 
-      <Footer/>
+      <Footer />
     </div>
   );
 }

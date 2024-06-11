@@ -1,0 +1,18 @@
+.page-preview {
+  height: 100vh;
+  text-align: center;
+  padding-top: 115px;
+  &__title {
+    font-weight: 500;
+    font-size: 54px;
+    line-height: 107%;
+    letter-spacing: -0.02em;
+    margin-bottom: 24px;
+  }
+  &__descr {
+    font-size: 20px;
+    line-height: 160%;
+    text-align: center;
+    color: #121212;
+  }
+}
