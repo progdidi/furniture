@@ -1,0 +1,34 @@
+.product-offer {
+  padding: 24px 0;
+  border-top: 1px solid #e8ecef;
+  border-bottom: 1px solid #e8ecef;
+  margin-bottom: 24px;
+  &__text {
+    margin-bottom: 12px;
+    color: #343839;
+  }
+  &__timer {
+    display: flex;
+    align-items: flex-start;
+    gap: 16px;
+    &-item {
+      .product-offer__timer-num {
+        font-weight: 500;
+        font-size: 34px;
+        line-height: 112%;
+        letter-spacing: -0.02em;
+        text-align: center;
+        width: 60px;
+        height: 60px;
+        background-color: #f3f5f7;
+        padding: 10px;
+      }
+      .product-offer__timer-text {
+        font-size: 12px;
+        line-height: 167%;
+        text-align: center;
+        color: #6c7275;
+      }
+    }
+  }
+}
