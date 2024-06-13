@@ -70,7 +70,7 @@ const ShopPage = () => {
                 })}
               </div>
 
-              <button className="shop-main__btn">Show more</button>
+              <button className="shop-main__btn white-btn">Show more</button>
 
               
             </div>
