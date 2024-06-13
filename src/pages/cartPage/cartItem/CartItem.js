@@ -1,0 +1,11 @@
+import './cartItem.scss';
+
+const CartItem = () => {
+    return ( 
+        <div className="cart-item">
+
+        </div>
+     );
+}
+ 
+export default CartItem;

@@ -1,0 +1,113 @@
+.cart {
+    padding: 80px 0;
+    &__title {
+        font-weight: 500;
+        font-size: 54px;
+        line-height: 107%;
+        letter-spacing: -0.02em;
+        margin-bottom: 40px;
+        text-align: center;
+
+    }
+
+    &__buttons {
+        width: 75%;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 32px;
+        margin-bottom: 80px;
+        .cart__btn {
+            width: 100%;
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 162%;
+            color: #b1b5c3;
+            font-family: var(--second-font);
+            display: flex;
+            align-items: center;
+            gap: 17px;
+            border-bottom: 2px solid transparent;
+            padding-bottom: 26px;
+            span {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border-radius: 50%;
+                width: 40px;
+                height: 40px;
+                background-color: #b1b5c3;
+                color: #fff;
+            }
+
+            &.active {
+                color: #23262f;
+                border-bottom: 2px solid #23262f;
+                span {
+                    background-color: #23262f;
+
+                }
+            }
+        }
+
+    }
+
+    &__tabs {
+        .cart-tab {
+            &.order {
+                .order-details {
+                    display: flex;
+                    justify-content: space-between;
+                }
+            }
+
+        }
+    }
+}
+
+
+
+.order-summary {
+    width: 413px;
+    padding: 24px;
+    border: 1px solid var(--dark-gray-color);
+    border-radius: 6px;
+    .order-summary__title {
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 140%;
+        color: var(--black-color);
+        margin-bottom: 16px;
+    }
+    .order-summary__shipping {
+        margin-bottom: 16px;
+        border: none;
+        .order-summary__shipping-label {
+            display: block;
+            padding: 13px 16px;
+            border: 1px solid var(--black-color);
+            border-radius: 4px;
+            margin-bottom: 12px;
+
+        }
+        .order-summary__shipping-input {
+        }
+    }
+    
+    .order-sum {
+        .order-sum__item {
+            padding: 13px 0;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .order-sum__item-text {
+        }
+        .order-sum__item-num {
+        }
+    }
+    
+    .order-summary__btn {
+        width: 100%;
+    }
+}
