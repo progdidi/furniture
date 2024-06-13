@@ -17,10 +17,13 @@
 
 .arrivals {
   padding-bottom: 52px;
+  
   &__items {
     display: flex;
     align-items: center;
     gap: 24px;
+    overflow: hidden;
+  width: 100%;
   }
 }
 
@@ -79,5 +82,92 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 24px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .promotion {
+    &__inner {
+      .promotion__img {
+        width: 40%;
+      }
+
+      .promotion__info {
+        padding: 100px 0px 100px 30px;
+        &-title {
+          font-size: 32px;
+        }
+      }
+  
+    }
+  }
+
+  .benefits {
+    &__inner {
+      grid-gap: 15px;
+    }
+  }
+}
+
+
+@media (max-width: 800px) {
+  .collection {
+    &__inner {
+      grid-template-rows: repeat(2, 240px);
+      gap: 15px;
+    }
+  }
+
+  .benefits {
+    &__inner {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  .promotion {
+    &__inner {
+      flex-direction: column;
+      .promotion__img {
+        width: 100%;
+      }
+
+      .promotion__info {
+        padding: 80px 30px;
+      }
+  
+    }
+  }
+
+  .articles {
+    &__inner {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+}
+
+@media (max-width: 550px) {
+  .collection {
+    &__inner {
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
+
+  .articles {
+    &__inner {
+      grid-template-columns: repeat(1, 1fr);
+      .articles-item {
+        margin: 0 auto;
+      }
+    }
+  }
+}
+
+@media(max-width: 420px) {
+  .benefits {
+    &__inner {
+      width: 90%;
+      margin: 0 auto;
+      grid-template-columns: repeat(1, 1fr);
+    }
   }
 }

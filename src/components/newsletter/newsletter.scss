@@ -54,3 +54,19 @@
     }
   }
 }
+
+@media (max-width: 700px) {
+  .newsletter {
+    &-form {
+      width: 80%;
+    }
+  }
+}
+
+@media (max-width: 500px) {
+  .newsletter {
+    &-form {
+      width: 90%;
+    }
+  }
+}

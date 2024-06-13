@@ -18,3 +18,9 @@
     color: #6c7275;
   }
 }
+
+@media (max-width: 1000px) {
+  .benefit-item {
+    padding: 30px 20px;
+  }
+}
