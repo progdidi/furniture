@@ -5,6 +5,7 @@ import view1 from './view1.svg';
 import view2 from './view2.svg';
 import view3 from './view3.svg';
 import view4 from './view4.svg';
+import banner from './banner.png';
 
 //components
 import PagePreview from "../../components/pagePreview/PagePreview";
@@ -13,12 +14,15 @@ import ProductFilter from "./productFilter/ProductFilter";
 import ProductCard from "../../components/productCard/ProductCard";
 import { products } from "../../helpers/products/products";
 
+import Newsletter from "../../components/newsletter/Newsletter";
+
 const ShopPage = () => {
   return (
     <>
       <PagePreview
         title="Shop Page"
         descr="Let’s design the place you always imagined."
+        bgImage={banner}
       />
 
       <section className="shop">
@@ -73,6 +77,8 @@ const ShopPage = () => {
           </div>
         </div>
       </section>
+
+      <Newsletter/>
     </>
   );
 };

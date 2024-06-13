@@ -1,18 +1,24 @@
 .page-preview {
-  height: 392px;
-  text-align: center;
-  padding-top: 115px;
-  &__title {
-    font-weight: 500;
-    font-size: 54px;
-    line-height: 107%;
-    letter-spacing: -0.02em;
-    margin-bottom: 24px;
-  }
-  &__descr {
-    font-size: 20px;
-    line-height: 160%;
+  &__inner {
+    height: 392px;
     text-align: center;
-    color: #121212;
+    padding-top: 115px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    .page-preview__title {
+      font-weight: 500;
+      font-size: 54px;
+      line-height: 107%;
+      letter-spacing: -0.02em;
+      margin-bottom: 24px;
+    }
+    .page-preview__descr {
+      font-size: 20px;
+      line-height: 160%;
+      text-align: center;
+      color: var(--dark-black-color);
+      font-family: var(--second-font);
+    }
   }
 }
