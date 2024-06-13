@@ -1,4 +1,5 @@
 import { NavLink } from 'react-router-dom';
+import { useState } from 'react';
 //styles
 import './header.scss';
 
@@ -9,6 +10,9 @@ import basket from './images/basket.svg';
 
 
 const Header = () => {
+
+    const [showMobileMenu, setShowMobileMenu] = useState(false);
+
     return ( 
         <header className="header">
             <div className="container">
@@ -16,7 +20,7 @@ const Header = () => {
                     <NavLink to="/" className="logo">Furniture</NavLink>
 
                     <nav className="menu">
-                        <ul className="menu__list">
+                        <ul className={showMobileMenu ? "menu__list active" : "menu__list"}>
                             <li className="menu__list-item"><NavLink to="/" className="menu__list-link">Home</NavLink></li>
                             <li className="menu__list-item"><NavLink to="/shop" className="menu__list-link">Shop</NavLink></li>
                             <li className="menu__list-item"><NavLink to="/product" className="menu__list-link">Product</NavLink></li>
@@ -35,6 +39,12 @@ const Header = () => {
                             <img src={basket} alt="" className="header__btn-img" />
                         </button>
                     </div>
+
+                    <button className="menu-btn" onClick={() => setShowMobileMenu(!showMobileMenu)}>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
                 </div>
             </div>
         </header>
