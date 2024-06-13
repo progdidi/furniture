@@ -34,3 +34,10 @@
     }
   }
 }
+
+@media (max-width: 550px) {
+  .review-item {
+    flex-direction: column;
+    gap: 20px;
+  }
+}

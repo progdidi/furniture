@@ -6,6 +6,7 @@ import { reviews } from "../../helpers/reviews/reviews";
 import Newsletter from "../../components/newsletter/Newsletter";
 import OfferTimer from "./offerTimer/OfferTimer";
 import ProductRating from "../../components/productRating/ProductRating";
+import Counter from "../../components/counter/Counter";
 
 //images
 import example from "./example.png";
@@ -76,7 +77,7 @@ const ProductPage = () => {
               </div>
 
               <div className="product__buttons">
-                <button className="product-btn"></button>
+                <Counter/>
                 <button className="product-btn like">Wishlist</button>
                 <button className="product-btn basket main-btn">
                   Add to Cart

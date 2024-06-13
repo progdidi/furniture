@@ -80,3 +80,15 @@
     }
 }
 
+@media (max-width: 1000px) {
+    .product-filter {
+        position: absolute;
+        transform: translateX(-200%);
+        top: 0;
+        left: 0;
+        z-index: 20;
+        background-color: #fff;
+        transition: all 0.3s;
+    }
+}
+

@@ -30,6 +30,7 @@ const ShopPage = () => {
             <div className="shop-main">
 
               <div className="shop-main__header">
+                <button className="product-filter__title">Filter</button>
                 <h4 className="shop-main__title">Living Room</h4>
 
                 <label className="product-sort__label"> Sort by

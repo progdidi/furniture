@@ -3,7 +3,7 @@ import './productFilter.scss';
 const ProductFilter = () => {
     return ( 
         <div className="product-filter">
-            <h4 className="product-filter__title">Filter</h4>
+            
             <ul className="categories-list">
                 <h4 className="categories-list__title">CATEGORIES</h4>
                 <li className="categories-list__item">
