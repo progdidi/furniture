@@ -1,3 +1,4 @@
+import { NavLink } from 'react-router-dom';
 //styles
 import './header.scss';
 
@@ -12,14 +13,14 @@ const Header = () => {
         <header className="header">
             <div className="container">
                 <div className="header__inner">
-                    <a href="#" className="logo">Furniture</a>
+                    <NavLink to="/" className="logo">Furniture</NavLink>
 
                     <nav className="menu">
                         <ul className="menu__list">
-                            <li className="menu__list-item"><a href="" className="menu__list-link">Home</a></li>
-                            <li className="menu__list-item"><a href="" className="menu__list-link">Shop</a></li>
-                            <li className="menu__list-item"><a href="" className="menu__list-link">Product</a></li>
-                            <li className="menu__list-item"><a href="" className="menu__list-link">Contact Us</a></li>
+                            <li className="menu__list-item"><NavLink to="/" className="menu__list-link">Home</NavLink></li>
+                            <li className="menu__list-item"><NavLink to="/shop" className="menu__list-link">Shop</NavLink></li>
+                            <li className="menu__list-item"><NavLink to="/product" className="menu__list-link">Product</NavLink></li>
+                            <li className="menu__list-item"><NavLink to="/contacts" className="menu__list-link">Contact us</NavLink></li>
                         </ul>
                     </nav>
 
