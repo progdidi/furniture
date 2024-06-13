@@ -1,0 +1,22 @@
+.counter {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 12px;
+    align-items: center;
+    border: 1px solid var(--dark-gray-color);
+    border-radius: 4px;
+    padding: 6px 8px;
+    &-btn {
+
+    }
+
+    &-amount {
+        font-weight: 600;
+        font-size: 12px;
+        line-height: 167%;
+        text-align: center;
+        color: var(--dark-black-color);
+        font-family: var(--second-font);
+
+    }
+}

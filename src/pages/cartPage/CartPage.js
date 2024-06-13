@@ -29,9 +29,18 @@ const CartPage = () => {
                     <div className="cart__tabs">
                         <div className="cart-tab order">
                             <div className="order-details">
-                                <div className="order-details__items">
+                                <table className="order-table">
+                                    <tr className="order-table__header">
+                                        <th className="order-table__product" width="50%">Product</th>
+                                        <th>Quantity</th>
+                                        <th>Price</th>
+                                        <th>Subtotal</th>
+                                    </tr>
 
-                                </div>
+                                    <CartItem/>
+                                    <CartItem/>
+                                    <CartItem/>
+                                </table>
 
                                 <form action="" className="order-summary">
                                     <h4 className="order-summary__title">Cart summary</h4>
