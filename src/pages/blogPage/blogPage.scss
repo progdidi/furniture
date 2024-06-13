@@ -11,6 +11,12 @@
         grid-column-gap: 25px;
         grid-row-gap: 40px;
         margin-bottom: 80px;
+        .articles-item {
+            &__link {
+                display: none;
+            }
+            
+        }
 
     }
 }

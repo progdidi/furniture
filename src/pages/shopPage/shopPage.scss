@@ -18,23 +18,7 @@
                     line-height: 160%;
                     font-family: var(--second-font);
                 }
-                .shop-main__view {
-                    display: flex;
-                    .shop-main__view-btn {
-                        border: 1px solid #6C7275;
-                        width: 46px;
-                        height: 40px;
-                        display: flex;
-                        justify-content: center;
-                        align-items: center;
-                        &.active {
-                            background-color: #f3f5f7;
-                        }
-                        &:hover {
-                            background-color: #f3f5f7;
-                        }
-                    }
-                }
+                
             }
             .product-items {
                 display: grid;

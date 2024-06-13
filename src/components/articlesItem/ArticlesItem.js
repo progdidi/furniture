@@ -1,6 +1,6 @@
 import "./articlesItem.scss";
 
-const ArticlesItem = ({ img, title }) => {
+const ArticlesItem = ({ img, title, date }) => {
   return (
     <div className="articles-item">
       <img src={img} alt="" className="articles-item__img" />
@@ -8,6 +8,7 @@ const ArticlesItem = ({ img, title }) => {
       <a href="" className="articles-item__link main-link">
         Read More
       </a>
+      <p className="articles-item__date">{date}</p>
     </div>
   );
 };

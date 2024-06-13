@@ -17,4 +17,10 @@
     letter-spacing: -0.03em;
     color: var(--black-color);
   }
+  &__date {
+    font-size: 12px;
+    line-height: 167%;
+    font-family: var(--second-font);
+    color: #6C7275;
+  }
 }

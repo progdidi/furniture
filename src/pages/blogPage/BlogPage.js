@@ -11,6 +11,8 @@ import { articles } from "../../helpers/articles/articles";
 
 import Newsletter from "../../components/newsletter/Newsletter";
 
+import LayoutChoice from '../../components/layoutChoice/LayoutChoice';
+
 const BlogPage = () => {
     return ( 
         <>
@@ -30,6 +32,8 @@ const BlogPage = () => {
                             <button className="blog__tab-btn">Featured</button>
                         </div>
 
+                        <LayoutChoice/>
+
                         
 
                     </div>
@@ -39,6 +43,7 @@ const BlogPage = () => {
                                 <ArticlesItem
                                 img={article.img}
                                 title={article.title}
+                                date={article.date}
                                 key={article.id}
                                 />
                             );
