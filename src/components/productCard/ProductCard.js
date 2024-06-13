@@ -2,15 +2,14 @@ import "./productCard.scss";
 
 import star from "./star.svg";
 import like from "./like.svg";
-import example from "./example.png";
 
 const ProductCard = ({ img, name, price }) => {
   return (
-    <div className="product-card">
+    <a href="" className="product-card">
       <div className="product-card__main">
         <p className="product-card__tag new">new</p>
         <p className="product-card__tag sale">-50%</p>
-        <img src={example} alt="" className="product-card__img" />
+        <img src={img} alt="" className="product-card__img" />
         <div className="product-card__overlay">
           <button className="like-btn">
             <img src={like} alt="" className="like-btn__img" />
@@ -32,7 +31,7 @@ const ProductCard = ({ img, name, price }) => {
         <h6 className="product-card__title">{name}</h6>
         <p className="product-card__price">${price}</p>
       </div>
-    </div>
+    </a>
   );
 };
 
