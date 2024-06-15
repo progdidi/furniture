@@ -32,9 +32,9 @@ const Header = () => {
                         <button className="header__btn">
                             <img src={search} alt="" className="header__btn-img" />
                         </button>
-                        <button className="header__btn">
+                        <NavLink to="/user" className="header__btn">
                             <img src={user} alt="" className="header__btn-img" />
-                        </button>
+                        </NavLink>
                         <NavLink to="/cart" className="header__btn">
                             <img src={basket} alt="" className="header__btn-img" />
                         </NavLink>
