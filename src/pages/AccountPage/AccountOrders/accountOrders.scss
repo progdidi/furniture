@@ -1,0 +1,26 @@
+.account-orders {
+    &__title {
+        margin-bottom: 40px;
+    }
+    &__table {
+        width: 100%;
+        font-family: var(--second-font);
+        &-header {
+            border-bottom: 1px solid #E8ECEF;
+            padding-bottom: 8px;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 157%;
+            color: var(--dark-gray-color);
+        }
+        &-data {
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 157%;
+            color: var(--black-color);
+            padding: 24px 0;
+            border-bottom: 1px solid #E8ECEF;
+        }
+    }
+}
+

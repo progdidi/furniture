@@ -33,7 +33,7 @@ const AccountPage = () => {
                     <div className="account-page__info">
                         {/* <AccountInfo/> */}
 
-                        <AccountAddress/>
+                        {/* <AccountAddress/> */}
 
                         <AccountOrders/>
 
