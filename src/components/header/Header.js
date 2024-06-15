@@ -35,9 +35,9 @@ const Header = () => {
                         <button className="header__btn">
                             <img src={user} alt="" className="header__btn-img" />
                         </button>
-                        <button className="header__btn">
+                        <NavLink to="/cart" className="header__btn">
                             <img src={basket} alt="" className="header__btn-img" />
-                        </button>
+                        </NavLink>
                     </div>
 
                     <button className="menu-btn" onClick={() => setShowMobileMenu(!showMobileMenu)}>
