@@ -9,13 +9,7 @@
                 margin-bottom: 0;
             }
         }
-        .account__title {
-            font-family: var(--second-font);
-            font-weight: 600;
-            font-size: 20px;
-            line-height: 160%;
-            margin-bottom: 24px;
-        }
+        
         &-label {
         }
         &-input {
@@ -24,5 +18,13 @@
         &-btn {
         }
     }
+}
+
+.account__title {
+    font-family: var(--second-font);
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 160%;
+    margin-bottom: 24px;
 }
 

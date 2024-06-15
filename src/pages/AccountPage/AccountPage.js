@@ -31,7 +31,7 @@ const AccountPage = () => {
                        
                     </div>
                     <div className="account-page__info">
-                        <AccountInfo/>
+                        {/* <AccountInfo/> */}
 
                         <AccountAddress/>
 

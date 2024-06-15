@@ -1,0 +1,48 @@
+.account-address {
+    &__title {
+        margin-bottom: 19px;
+    }
+    &__inner {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 23px;
+        .account-address__item {
+            border: 1px solid var(--dark-gray-color);
+            border-radius: 8px;
+            padding: 16px 24px;
+            font-family: var(--second-font);
+            &-title {
+                margin-bottom: 8px;
+                font-weight: 600;
+                font-size: 16px;
+                line-height: 162%;
+            }
+            &-text {
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 157%;
+            }
+            &-btn {
+                font-weight: 600;
+                font-size: 16px;
+                line-height: 162%;
+                color: var(--dark-gray-color);
+                padding-left: 21px;
+                position: relative;
+                &::before {
+                    position: absolute;
+                    content: '';
+                    background-image: url('./edit.svg');
+                    width: 16px;
+                    height: 16px;
+                    background-repeat: no-repeat;
+                    left: 0;
+                    top: 50%;
+                    transform: translateY(-50%);
+                }
+            }
+        }
+        
+    }
+}
+
