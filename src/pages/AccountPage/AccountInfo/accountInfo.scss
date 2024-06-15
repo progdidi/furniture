@@ -1,0 +1,28 @@
+.account-info {
+    width: 100%;
+    .account-info__form {
+        &-fieldset {
+            border: none;
+            margin-bottom: 40px;
+            padding: 0;
+            &:last-of-type {
+                margin-bottom: 0;
+            }
+        }
+        .account__title {
+            font-family: var(--second-font);
+            font-weight: 600;
+            font-size: 20px;
+            line-height: 160%;
+            margin-bottom: 24px;
+        }
+        &-label {
+        }
+        &-input {
+            width: 100%;
+        }
+        &-btn {
+        }
+    }
+}
+
