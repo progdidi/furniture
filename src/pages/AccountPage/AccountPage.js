@@ -35,7 +35,7 @@ const AccountPage = () => {
 
                         {/* <AccountAddress/> */}
 
-                        <AccountOrders/>
+                        {/* <AccountOrders/> */}
 
                         <AccountWishlist/>
                     </div>

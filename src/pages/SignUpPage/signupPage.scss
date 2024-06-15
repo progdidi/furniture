@@ -1,0 +1,47 @@
+.sign-up {
+    &__inner {
+        display: flex;
+        .sign-up__media {
+            width: 50%;
+            position: relative;
+            .sign-up__media-text {
+            }
+            .sign-up__media-img {
+                width: 100%;
+                object-fit: cover;
+            }
+        }
+        
+        .sign-up__info {
+            width: 50%;
+            padding-top: 220px;
+            padding-left: 88px;
+            padding-right: 160px;
+            .sign-up__info-title {
+            }
+            .sign-up__info-text {
+            }
+            .sign-up__info-link {
+            }
+            .sign-up__form {
+                width: 100%;
+                .sign-up__form-input {
+                    width: 100%;
+                    margin-bottom: 32px;
+                    &.password {
+                    }
+                }
+                
+                .sign-up__form-label {
+                }
+                .sign-up__form-btn {
+                    display: block;
+                    width: 100%;
+                }
+            }
+            
+        }
+    }
+    
+    
+}

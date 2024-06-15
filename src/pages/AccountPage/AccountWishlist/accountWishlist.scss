@@ -1,0 +1,19 @@
+.account-wishlist {
+    &__title {
+        margin-bottom: 40px;
+    }
+    &__table {
+        width: 100%;
+        &-header {
+            text-align: left;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 157%;
+            color: var(--dark-gray-color);
+            font-family: var(--second-font);
+            padding-bottom: 8px;
+            border-bottom: 1px solid #E8ECEF;
+        }
+    }
+    
+}
