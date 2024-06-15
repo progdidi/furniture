@@ -11,13 +11,12 @@ import CollectionItem from "../../components/collectionItem/CollectionItem";
 import ProductCard from "../../components/productCard/ProductCard";
 import { products } from "../../helpers/products/products";
 
-import BenefitItem from "./benefitItem/BenefitItem";
-import { benefits } from "../../helpers/benefits/benefits";
-
 import ArticlesItem from "../../components/articlesItem/ArticlesItem";
 import { articles } from "../../helpers/articles/articles";
 
 import Newsletter from "../../components/newsletter/Newsletter";
+
+import Benefits from "../../components/benefits/Benefits";
 
 const MainPage = () => {
   return (
@@ -80,22 +79,7 @@ const MainPage = () => {
         </div>
       </section>
 
-      <div className="benefits">
-        <div className="container">
-          <div className="benefits__inner">
-            {benefits.map((benefit) => {
-              return (
-                <BenefitItem
-                  img={benefit.img}
-                  title={benefit.title}
-                  descr={benefit.descr}
-                  key={benefit.id}
-                />
-              );
-            })}
-          </div>
-        </div>
-      </div>
+      <Benefits/>
 
       <section className="promotion">
         <div className="container-fluid">
