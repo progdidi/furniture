@@ -12,13 +12,13 @@ import { articles } from '../../helpers/articles/articles';
 
 import Newsletter from '../../components/newsletter/Newsletter';
 
-const ArticlePage = ({title, mainImg}) => {
+const ArticlePage = ({title, mainImg, author, date, gal1, gal2}) => {
     return ( 
         <>
         <section className="article-page">
             <div className="container">
                 <h3 className="article-page__title page__title">How to make a busy bathroom a place to relax</h3>
-                <div className="__info">
+                <div className="article-page__info">
                     <p className="article-page__info-author">Henrik Annemark</p>
                     <p className="article-page__info-date">October 16, 2023</p>
                 </div>
@@ -41,7 +41,7 @@ const ArticlePage = ({title, mainImg}) => {
 
                 <div className="article-page__inner">
                     <img src={example4} alt="" className="article-page__img" />
-                    <div className="article-page__info">
+                    <div>
                         <h4 className="article-page__subtitle">An ecosystem of towels</h4>
                         <p className="article-page__text">Racks or hooks that allow air to circulate around each towel prolong their freshness. They dry quick and the need for frequent washing is minimized.</p>
 
@@ -53,8 +53,8 @@ const ArticlePage = ({title, mainImg}) => {
 
                 <div className="article-page__recommendation">
                     <div className="section__top">
-                        <h5 className="article-page__recommendation-title"></h5>
-                        <a href="" className="article-page__recommendation-link"></a>
+                        <h5 className="article-page__recommendation-title">You might also like</h5>
+                        <a href="" className="article-page__recommendation-link">More Articles</a>
                     </div>
                    
                     <div className="article-page__recommendation-inner">
