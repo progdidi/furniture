@@ -95,6 +95,9 @@ body {
 }
 
 @media (max-width: 600px) {
+  .page__title {
+    font-size: 40px;
+  }
   .section__title {
     font-size: 32px;
   }

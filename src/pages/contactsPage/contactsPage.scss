@@ -21,8 +21,7 @@
         }
         &__info {
             background-color: #F3F5F7;
-            padding-top: 100px;
-            padding-left: 72px;
+            padding: 100px 72px;
             &-title {
                 margin-bottom: 16px;
             }
@@ -137,8 +136,6 @@
             }
         }
         
-        .contacts-map {
-        }
     }
 
     .benefits {
@@ -149,6 +146,78 @@
         }
     }
 }
+
+@media (max-width: 1000px) {
+    .about {
+        .about-main {
+            &__img {
+                width: 40%;
+            }
+            &__info {
+                padding: 80px 40px;
+            }
+        }
+    }
+    .contacts {
+        .contacts__inner {
+            grid-template-columns: 1fr;
+            max-width: 80%;
+            margin: 0 auto;
+            margin-bottom: 80px;
+        }
+        .benefits {
+            &__inner {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+    }
+}
+
+@media (max-width: 800px) {
+    .contacts {
+        .contacts__items {
+            gap: 10px;
+            .contacts__item {
+                padding: 10px;
+                display: flex ;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+        }
+    }
+}
+
+@media (max-width: 600px) {
+    .about {
+        &__title {
+            max-width: 100%;
+        }
+        &__text {
+            max-width: 100%;
+        }
+        .about-main {
+            flex-direction: column;
+            &__img {
+                width: 100%;
+            }
+        }
+    }
+    .contacts {
+        .contacts__items {
+            grid-template-columns: 1fr;
+            .contacts__item {
+                padding: 16px 10px;
+            }
+        }
+
+        .contacts__inner {
+            max-width: 90%;
+        }
+    }
+}
+
+
 
 
 

@@ -65,7 +65,7 @@ Our customer service is always prepared to support you 24/7</p>
                         </form>
 
                         <div className="contacts-map">
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2144.3129997857013!2d60.20764897628221!3d57.49003555686636!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x43c1c3ff2c07259d%3A0x21e52644fd145934!2sGazeta%20%22Zvezda%22!5e0!3m2!1sen!2sby!4v1718452122947!5m2!1sen!2sby" width="600" height="440" style={{border:0}} allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2144.3129997857013!2d60.20764897628221!3d57.49003555686636!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x43c1c3ff2c07259d%3A0x21e52644fd145934!2sGazeta%20%22Zvezda%22!5e0!3m2!1sen!2sby!4v1718452122947!5m2!1sen!2sby" width="100%" height="440" style={{border:0}} allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                         </div>
                     </div>
 
