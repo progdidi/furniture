@@ -30,9 +30,9 @@ const CartPage = () => {
                     </div>
 
                     <div className="cart__tabs">
-                        <div className="cart-tab order">
+                        {/* <div className="cart-tab order">
                             <OrderDetails/>
-                        </div>
+                        </div> */}
 
 
                         <div className="cart-tab checkout">
