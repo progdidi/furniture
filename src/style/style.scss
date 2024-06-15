@@ -25,6 +25,14 @@ body {
   margin: 0 auto;
 }
 
+.page__title {
+  font-weight: 500;
+  font-size: 54px;
+  line-height: 107%;
+  letter-spacing: -0.02em;
+  color: var(--black-color);
+}
+
 .section__title {
   font-weight: 500;
   font-size: 40px;
