@@ -8,10 +8,14 @@ import search from './images/search.svg';
 import user from './images/user.svg';
 import basket from './images/basket.svg';
 
+//components
+import SignUpPopup from '../modals/SignUpPopup/SignUpPopup';
+
 
 const Header = () => {
 
     const [showMobileMenu, setShowMobileMenu] = useState(false);
+    const [showSignup, setShowSignup] = useState(false);
 
     return ( 
         <header className="header">
@@ -32,9 +36,9 @@ const Header = () => {
                         <button className="header__btn">
                             <img src={search} alt="" className="header__btn-img" />
                         </button>
-                        <NavLink to="/user" className="header__btn">
+                        <button className="header__btn" onClick={() => setShowSignup(!showSignup)}>
                             <img src={user} alt="" className="header__btn-img" />
-                        </NavLink>
+                        </button>
                         <NavLink to="/cart" className="header__btn">
                             <img src={basket} alt="" className="header__btn-img" />
                         </NavLink>
@@ -46,6 +50,8 @@ const Header = () => {
                         <span></span>
                     </button>
                 </div>
+
+                <SignUpPopup showSignUp={showSignup}/>
             </div>
         </header>
      );
