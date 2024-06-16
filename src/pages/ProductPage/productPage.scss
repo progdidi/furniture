@@ -6,6 +6,7 @@
     grid-template-columns: repeat(2, 1fr);
     gap: 63px;
     align-items: flex-start;
+    padding-bottom: 24px;
     .product-media {
       width: 100%;
       object-fit: cover;
@@ -124,47 +125,32 @@
   }
 }
 
-.reviews {
-  padding-bottom: 40px;
-  &__title {
-    margin-bottom: 24px;
-  }
-  .product-rating {
-    margin-bottom: 40px;
-  }
-  .review-form {
-    width: 100%;
-    position: relative;
-    padding: 23px;
-    border: 2px solid #e8ecef;
-    border-radius: 16px;
-    margin-bottom: 40px;
-    &__input {
-      width: 100%;
-      border: none;
-      background-color: transparent;
+.product-tabs {
+  &__buttons {
+    padding-top: 40px;
+    margin-bottom: 48px;
+    display: flex;
+    gap: 80px;
+    align-items: center;
+    border-bottom: 1px solid #E8ECEF;
+    .product-tabs__btn {
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 178%;
+      letter-spacing: -0.02em;
+      color: #807e7e;
+      font-family: var(--second-font);
+      border-bottom: 1px solid transparent;  
+      transition: all 0.3s;
+      &.active {
+        color: var(--dark-black-color);
+        border-bottom: 1px solid var(--dark-black-color);
+      }
+      &:hover {
+        color: var(--dark-black-color);
+        border-bottom: 1px solid var(--dark-black-color);
+      }
     }
-    &__btn {
-      position: absolute;
-      right: 16px;
-      top: 50%;
-      transform: translateY(-50%);
-    }
-  }
-
-  &-btn {
-    border: 1px solid var(--black-color);
-    border-radius: 80px;
-    padding: 6px 0;
-    width: 158px;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 175%;
-    letter-spacing: -0.03em;
-    text-align: center;
-    display: block;
-    margin: 0 auto;
-    margin-top: 24px;
   }
 }
 

@@ -2,60 +2,32 @@ import './productFilter.scss';
 
 const ProductFilter = () => {
     return ( 
-        <div className="product-filter">
-            
-            <ul className="categories-list">
-                <h4 className="categories-list__title">CATEGORIES</h4>
-                <li className="categories-list__item">
-                    <button className="categories-list-btn">Living Room</button>
-                </li>
-                <li className="categories-list__item">
-                    <button className="categories-list-btn">Bedroom</button>
-                </li>
-                <li className="categories-list__item">
-                    <button className="categories-list-btn active">Kitchen</button>
-                </li>
-                <li className="categories-list__item">
-                    <button className="categories-list-btn">Bathroom</button>
-                </li>
-                <li className="categories-list__item">
-                    <button className="categories-list-btn">Dinning</button>
-                </li>
-                <li className="categories-list__item">
-                    <button className="categories-list-btn">Outdoor</button>
-                </li>
-                <li className="categories-list__item">
-                    <button className="categories-list-btn">Outdoor</button>
-                </li>
-                <li className="categories-list__item">
-                    <button className="categories-list-btn">Outdoor</button>
-                </li>
-            </ul>
-
-            <div className="price-list">
-                <h4 className="price-list__title">PRICE</h4>
-                <form action="" className="price-form">
-                    <label htmlFor="" className="price-form__label">All Price
-                        <input type="checkbox" className="price-form__input" />
-                    </label>
-                    <label htmlFor="" className="price-form__label">$0.00 - 99.99
-                        <input type="checkbox" className="price-form__input" />
-                    </label>
-                    <label htmlFor="" className="price-form__label">$100.00 - 199.99
-                        <input type="checkbox" className="price-form__input" />
-                    </label>
-                    <label htmlFor="" className="price-form__label">$200.00 - 299.99
-                        <input type="checkbox" className="price-form__input" />
-                    </label>
-                    <label htmlFor="" className="price-form__label">$300.00 - 399.99
-                        <input type="checkbox" className="price-form__input" />
-                    </label>
-                    <label htmlFor="" className="price-form__label">$400.00+
-                        <input type="checkbox" className="price-form__input" />
-                    </label>
-                </form>
+        <div className="product-filter__items">
+            <div className="product-filter__item">
+                <h5 className="product-filter__item-title">CATEGORIES</h5>
+                <select name="" id="" className="product-filter__item-menu">
+                    <option value="" className="product-filter__item-option">All Rooms</option>
+                    <option value="" className="product-filter__item-option">Living Room</option>
+                    <option value="" className="product-filter__item-option">Bedroom</option>
+                    <option value="" className="product-filter__item-option">Kitchen</option>
+                    <option value="" className="product-filter__item-option">Bathroom</option>
+                    <option value="" className="product-filter__item-option">Dinning</option>
+                    <option value="" className="product-filter__item-option">Outdoor</option>
+                </select>
+            </div>
+            <div className="product-filter__item">
+                <h5 className="product-filter__item-title">PRICE</h5>
+                <select name="" id="" className="product-filter__item-menu">
+                    <option value="" className="product-filter__item-option">All Price</option>
+                    <option value="" className="product-filter__item-option">$0.00 - 99.99</option>
+                    <option value="" className="product-filter__item-option">$100.00 - 199.99</option>
+                    <option value="" className="product-filter__item-option">$200.00 - 299.99</option>
+                    <option value="" className="product-filter__item-option">$300.00 - 399.99</option>
+                    <option value="" className="product-filter__item-option">$400.00+</option>
+                </select>
             </div>
         </div>
+
      );
 }
  

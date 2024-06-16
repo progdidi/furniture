@@ -1,0 +1,88 @@
+.filter-menu {
+    font-family: var(--second-font);  
+    width: 254px;  
+    .filter-menu__title {
+        position: relative;
+        padding-left: 32px;
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 160%;
+        color: var(--dar-black-color);
+        margin-bottom: 32px;
+        &::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            background-image: url('./filter.svg');
+            background-repeat: no-repeat;
+            width: 24px;
+            height: 24px;
+        }
+    }
+    .categories-list {
+        margin-bottom: 32px;
+        .categories-list__title {
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 162%;
+            color: var(--dar-black-color);
+            margin-bottom: 16px;
+        }
+        .categories-list__item {
+            margin-bottom: 12px;
+            
+        }
+        .categories-list-btn {
+            font-weight: 600;
+            font-size: 14px;
+            line-height: 157%;
+            color: #807e7e;
+            border-bottom: 1px solid transparent;
+            transition: all 0.3s;
+            &:hover {
+                color: var(--dark-black-color);
+                border-bottom: 1px solid var(--dark-black-color);
+            }
+            &.active {
+                color: var(--dark-black-color);
+                border-bottom: 1px solid var(--dark-black-color);
+
+            }
+        }
+    }
+    
+    .price-list {
+        .price-list__title {
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 162%;
+            color: var(--dar-black-color);
+            margin-bottom: 16px;
+        }
+        .price-form {
+            .price-form__label {
+                display: flex;
+                justify-content: space-between;
+                width: 100%;
+                font-weight: 600;
+                font-size: 14px;
+                line-height: 157%;
+                color: #807e7e;
+                margin-bottom: 8px;
+
+            }
+            .price-form__input {
+            }
+        }
+        
+    }
+}
+
+@media (max-width: 1000px) {
+    .filter-menu {
+        display: none;
+    }
+}
+

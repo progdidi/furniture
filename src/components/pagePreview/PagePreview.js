@@ -5,7 +5,7 @@ const PagePreview = ({ title, descr, bgImage }) => {
     <section className="page-preview" >
       <div className="container">
         <div className="page-preview__inner" style={{ backgroundImage: `url(${bgImage})` }}>
-          <h3 className="page-preview__title">{title}</h3>
+          <h3 className="page-preview__title page__title">{title}</h3>
           <p className="page-preview__descr">{descr}</p>
         </div>
       </div>
