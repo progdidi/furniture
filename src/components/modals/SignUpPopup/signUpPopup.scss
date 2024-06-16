@@ -7,9 +7,15 @@
     &__inner {
         display: flex;
         .sign-up__media {
+            background-color: #F3F5F7;
+            padding-top: 32px;
             width: 50%;
             position: relative;
             .sign-up__media-text {
+                font-weight: 500;
+                font-size: 24px;
+                line-height: 100%;
+                text-align: center;
             }
             .sign-up__media-img {
                 width: 100%;
@@ -84,6 +90,7 @@
         height: 100vh;
         opacity: 1;
         transform: translateY(0);
+        overflow: hidden;
     }
     
     

@@ -18,6 +18,7 @@ const Header = () => {
     const [showSignup, setShowSignup] = useState(false);
 
     return ( 
+        <>
         <header className="header">
             <div className="container">
                 <div className="header__inner">
@@ -51,9 +52,11 @@ const Header = () => {
                     </button>
                 </div>
 
-                <SignUpPopup showSignUp={showSignup}/>
+                
             </div>
         </header>
+        <SignUpPopup showSignUp={showSignup}/>
+        </>
      );
 }
  

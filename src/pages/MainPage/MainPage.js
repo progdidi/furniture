@@ -3,6 +3,8 @@ import "./mainPage.scss";
 //images
 import promo from "./images/promo.png";
 import promotion from "./images/promotion.png";
+import prev from './images/prev.svg';
+import next from './images/next.svg';
 
 //components
 import { collections } from "../../helpers/collections/collections";
@@ -24,15 +26,29 @@ const MainPage = () => {
       <section className="promo">
         <div className="container">
           <div className="promo-slider">
-            <div className="promo-slider__item">
-              <img src={promo} alt="" className="promo-slider__item-img" />
+            <div className="promo-slider__items">
+              <div className="promo-slider__item">
+                <img src={promo} alt="" className="promo-slider__item-img" />
+              </div>
             </div>
+
+            <div className="promo-slider__buttons">
+              <button className="promo-slider__btn prev"><img src={prev} alt="" className="promo-slider__btn-img" /></button>
+              <button className="promo-slider__btn next"><img src={next} alt="" className="promo-slider__btn-img" /></button>
+            </div>
+
+            <div className="promo-slider__dots">
+              <button className="promo-slider__dot active"></button>
+              <button className="promo-slider__dot"></button>
+              <button className="promo-slider__dot"></button>
+            </div>
+            
           </div>
 
           <div className="promo__info">
-            <h1 className="promo__title">Simply Unique/Simply Better.</h1>
+            <h1 className="promo__title">Simply Unique/ Simply Better.</h1>
             <p className="promo__text">
-              3legant is a gift & decorations store based in HCMC, Vietnam. Est
+              <span>3legant</span> is a gift & decorations store based in HCMC, Vietnam. Est
               since 2019.{" "}
             </p>
           </div>
