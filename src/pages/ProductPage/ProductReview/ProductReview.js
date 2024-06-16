@@ -9,7 +9,11 @@ const ProductReview = () => {
         <section className="reviews">
           <div className="container">
             <h4 className="reviews__title">Customer Reviews</h4>
-            <ProductRating />
+            <div className="reviews-summary">
+              <ProductRating />
+              <p className="reviews-summary__text"><span>11 </span>Reviews</p>
+            </div>
+            
 
             <form action="" className="review-form">
               <input type="text" className="review-form__input" />
@@ -17,7 +21,15 @@ const ProductReview = () => {
             </form>
 
             <div className="reviews__items">
-              <h5 className="reviews__items-title">11 Reviews</h5>
+              <div className="reviews__items-header">
+                <h5 className="reviews__items-title">11 Reviews</h5>
+                <select name="" id="" className="reviews__items-sort">
+                  <option value="" className="reviews__items-sort-option">Newest</option>
+                  <option value="" className="reviews__items-sort-option">Newest</option>
+                  <option value="" className="reviews__items-sort-option">Newest</option>
+                </select>
+              </div>
+              
 
               {reviews.map((review) => {
                 return (
