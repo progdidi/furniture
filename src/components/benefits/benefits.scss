@@ -5,4 +5,21 @@
       grid-template-columns: repeat(4, 1fr);
       grid-gap: 24px;
     }
+}
+
+
+@media (max-width: 800px) {
+  .benefits {
+    &__inner {
+      grid-template-columns: repeat(2, 1fr);
+    }
   }
+}
+
+@media(max-width: 420px) {
+  .benefits {
+    &__inner {
+      grid-gap: 10px;
+    }
+  }
+}

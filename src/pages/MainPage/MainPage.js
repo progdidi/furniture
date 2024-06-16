@@ -127,7 +127,7 @@ const MainPage = () => {
             </a>
           </div>
           <div className="articles__inner">
-            {articles.map((article) => {
+            {articles.slice(0, 3).map((article) => {
               return (
                 <ArticlesItem
                   img={article.img}
