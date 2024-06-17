@@ -46,3 +46,15 @@
     }
 }
 
+@media (max-width: 900px) {
+    .account-address {
+        &__inner {
+            display: flex;
+            flex-direction: column;
+            .account-address__item {
+                width: 90%;
+            }
+        }
+    }
+}
+

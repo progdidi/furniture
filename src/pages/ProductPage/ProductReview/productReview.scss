@@ -83,4 +83,16 @@
       }
       
     }
+}
+
+@media (max-width: 500px) {
+  .reviews {
+    &__items {
+      &-header {
+        flex-direction: column;
+        gap: 24px;
+        align-items: flex-start;
+      }
+    }
   }
+}

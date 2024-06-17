@@ -38,6 +38,10 @@
         .account-menu__list {
            
         }
+
+        .account-menu__select {
+           display: none;
+        }
         .account-menu__list-item {
             margin-bottom: 12px;
         }
@@ -67,3 +71,38 @@
         width: 100%;
     }
 }
+
+@media (max-width: 1000px) {
+    .account-page {
+        &__inner {
+            gap: 50px;
+        }
+        &__menu {
+            width: 220px;
+        }
+    }
+}
+
+
+@media (max-width: 650px) {
+    .account-page {
+        &__inner {
+            flex-direction: column;
+        }
+
+        &__menu {
+            width: 100%;
+            .account-menu__list {
+                display: none;
+            }
+            .account-menu__select {
+                display: block;
+                width: 100%;
+                padding: 14px 16px;
+                border: 2px solid var(--dark-gray-color);
+                border-radius: 8px;
+             }
+        }
+    }
+}
+

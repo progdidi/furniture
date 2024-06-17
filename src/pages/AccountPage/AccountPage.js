@@ -22,12 +22,24 @@ const AccountPage = () => {
                         </div>
 
                         <ul className="account-menu__list">
-                        <li className="account-menu__list-item"><button className="account-menu__btn active">Account</button></li>
+                            <li className="account-menu__list-item"><button className="account-menu__btn active">Account</button></li>
                             <li className="account-menu__list-item"><button className="account-menu__btn">Address</button></li>
                             <li className="account-menu__list-item"><button className="account-menu__btn">Orders</button></li>
                             <li className="account-menu__list-item"><button className="account-menu__btn">Wishlist</button></li>
                             <li className="account-menu__list-item"><button className="account-menu__btn">Log Out</button></li>
                         </ul>
+
+                        <select className="account-menu__select">
+                            <option className="account-menu__select-option">Account</option>
+                            <option className="account-menu__select-option">Address</option>
+                            <option className="account-menu__select-option">Orders</option>
+                            <option className="account-menu__select-option">Wishlist</option>
+                            <option className="account-menu__select-option">Log Out</option>
+                        </select>
+
+                        
+
+                        
                        
                     </div>
                     <div className="account-page__info">
