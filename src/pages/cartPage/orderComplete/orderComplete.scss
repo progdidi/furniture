@@ -1,5 +1,5 @@
 .order-complete {
-    width: 738px;
+    width: 75%;
     margin: 0 auto;
     border-radius: 8px;
     box-shadow: 0 32px 48px -48px rgba(18, 18, 18, 0.1);
@@ -66,5 +66,12 @@
         border-radius: 80px;
         padding: 12px 0;
         width: 203px;
+    }
+}
+
+@media (max-width: 800px) {
+    .order-complete {
+        width: 90%;
+        padding: 0;
     }
 }

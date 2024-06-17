@@ -11,14 +11,12 @@
     }
 
     &__buttons {
-        width: 75%;
-        margin: 0 auto;
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
+        display: flex;
+        justify-content: center;
         gap: 32px;
         margin-bottom: 80px;
         .cart__btn {
-            width: 100%;
+            min-width: 256px;
             font-weight: 600;
             font-size: 16px;
             line-height: 162%;
@@ -46,6 +44,12 @@
                 span {
                     background-color: #23262f;
 
+                }
+            }
+            &.done {
+                color: var(--green-color)
+                span {
+                    background-color: var(--green-color);
                 }
             }
         }
@@ -104,5 +108,23 @@
     
     .order-summary__btn {
         width: 100%;
+    }
+}
+
+@media (max-width: 900px) {
+    .cart {
+        &__buttons {
+            width: 100%;
+            overflow: hidden;
+            justify-content: flex-start;
+        }
+    }
+}
+
+@media (max-width: 420px) {
+    .cart {
+        &__buttons {
+            gap: 15px;
+        }
     }
 }

@@ -64,3 +64,12 @@
         }
     }
 }
+
+@media (max-width: 900px) {
+    .order {
+        .order-details {
+            flex-direction: column;
+            margin-bottom: 40px;
+        }
+    }
+}
