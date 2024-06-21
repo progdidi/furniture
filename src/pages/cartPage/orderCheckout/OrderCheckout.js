@@ -41,16 +41,16 @@ const OrderCheckout = () => {
             </div>
             <div className="checkout-summary">
                 <h4 className="checkout-summary__title">Order summary</h4>
-                <div className="checkout-summary__items">
+                <table className="checkout-summary__items">
                     <CartItem/>
                     <CartItem/>
                     <CartItem/>
-                </div>
+                </table>
 
                 <div className="checkout-summary__caupon">
                     <input className="checkout-summary__caupon-input"/>
                     <button className="checkout-summary__caupon-btn main-btn">Apply</button>
-                    <div className="checkout-summary__caupon-info"><span>JenkateMW</span><span>-$25.00 [Remove]</span></div>
+                    <div className="checkout-summary__caupon-info"><span>JenkateMW</span><span class="sum">-$25.00 [Remove]</span></div>
                 </div>
 
                 <div className="checkout-summary__total">

@@ -22,7 +22,7 @@ const CartItem = () => {
             <td>
                 <Counter/>
             </td>
-            <td>$19.00</td>
+            <td class="total">$19.00</td>
             <td class="subtotal">$38.00</td>
         </tr>
      );

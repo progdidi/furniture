@@ -71,25 +71,74 @@
             color: var(--dark-black-color);
         }
         &__items {
+            width: 100%;
             margin-bottom: 24px;
+            td {
+                width: unset;
+            }
+            .order-table__item {
+                position: relative;
+                width: 100%;
+                .product-item {
+                    align-items: flex-start;
+                    &__info {
+                        &-btn {
+                            display: none;
+                        }
+                    }
+                }
+                .counter {
+                    position: absolute;
+                    bottom: 29px;
+                    left: 92px;
+                }
+                td.total {
+                    display: none;
+                }
+            }
         }
         &__caupon {
             padding-bottom: 13px;
-            padding-top: 24px;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            flex-wrap: wrap;
             &-input {
                 border: 1px solid #cbcbcb;
                 border-radius: 6px;
-                width: 258px;
+                width: 66%;
+                height: 52px;
                 padding: 13px 16px;
-                margin-bottom: 16px;
+                display: block;
             }
             &-btn {
-                width: 95px;
+                display: block;
+                height: 52px;
+                width: 30%;
             }
             &-info {
+                width: 100%;
                 display: flex;
                 justify-content: space-between;
                 align-items: center;
+                padding: 13px 0px 13px 26px;
+                position: relative;
+                .sum {
+                    font-weight: 600;
+                    display: block;
+                    color: var(--green-color);
+                }
+                &::before {
+                    position: absolute;
+                    content: '';
+                    background-image: url('./caupon.svg');
+                    width: 22px;
+                    height: 20px;
+                    background-repeat: no-repeat;
+                    left: 0;
+                    top: 50%;
+                    transform: translateY(-50%);
+                }
             }
         }
         
