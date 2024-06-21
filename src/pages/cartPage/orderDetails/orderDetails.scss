@@ -32,23 +32,10 @@
                 margin-bottom: 4px;
                 border: none;
                 .order-summary__shipping-label {
-                    display: flex;
-                    align-items: center;
-                    justify-content: flex-start;
-                    gap: 4px;
-                    padding: 13px 16px;
-                    border: 1px solid var(--black-color);
-                    border-radius: 4px;
                     margin-bottom: 12px;
                     width: 100%;
                     .price {
                         margin-left: auto;
-                    }
-                    &.active {
-                        background-color: #F3F5F7;
-                    }
-                    &:hover {
-                        background-color: #F3F5F7;
                     }
         
                 }

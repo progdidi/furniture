@@ -10,8 +10,11 @@ const OrderCheckout = () => {
                 <form action="" className="checkout-form">
                     <fieldset className="checkout-form__fieldset">
                         <h5 className="checkout-form__title">Contact Infomation</h5>
-                        <label htmlFor="" className="checkout-form__label">fIRST Name<input type="text" className="checkout-form__input" placeholder='First name'/></label>
-                        <label htmlFor="" className="checkout-form__label">lAST Name<input type="text" className="checkout-form__input" placeholder='Last name'/></label>
+                        <div className="inline">
+                            <label htmlFor="" className="checkout-form__label">fIRST Name<input type="text" className="checkout-form__input" placeholder='First name'/></label>
+                            <label htmlFor="" className="checkout-form__label">lAST Name<input type="text" className="checkout-form__input" placeholder='Last name'/></label>
+                        </div>
+                       
                         <label htmlFor="" className="checkout-form__label">Phone Number<input type="text" className="checkout-form__input" placeholder='Phone number'/></label>
                         <label htmlFor="" className="checkout-form__label">Email address<input type="text" className="checkout-form__input" placeholder='Your Email'/></label>
                     </fieldset>
@@ -21,18 +24,24 @@ const OrderCheckout = () => {
                         <label htmlFor="" className="checkout-form__label">Street Address *<input type="text" className="checkout-form__input" placeholder='Stress Address'/></label>
                         <label htmlFor="" className="checkout-form__label">Country *<input type="text" className="checkout-form__input" placeholder='Country'/></label>
                         <label htmlFor="" className="checkout-form__label">Town / City *<input type="text" className="checkout-form__input" placeholder='Town / City'/></label>
-                        <label htmlFor="" className="checkout-form__label">State<input type="text" className="checkout-form__input" placeholder='State'/></label>
-                        <label htmlFor="" className="checkout-form__label">Zip Code<input type="text" className="checkout-form__input" placeholder='Zip Code'/></label>
-                        <label htmlFor="" className="checkout-form__label">Zip Code<input type="checkbox" className="checkout-form__input" />Use a different billing address (optional)</label>
+                        <div className="inline">
+                            <label htmlFor="" className="checkout-form__label">State<input type="text" className="checkout-form__input" placeholder='State'/></label>
+                            <label htmlFor="" className="checkout-form__label">Zip Code<input type="text" className="checkout-form__input" placeholder='Zip Code'/></label>
+                        </div>
+                        
+                        <label htmlFor="" className="checkout-form__label"><input type="checkbox" className="checkout-form__input" />Use a different billing address (optional)</label>
                     </fieldset>
 
                     <fieldset className="checkout-form__fieldset">
                         <h5 className="checkout-form__title">Payment method</h5>
-                        <label htmlFor="" className="checkout-form__label"><input type="radio" className="checkout-form__input" />Pay by Card Credit</label>
-                        <label htmlFor="" className="checkout-form__label"><input type="radio" className="checkout-form__input" placeholder=''/>Paypal</label>
+                        <label htmlFor="" className="checkout-form__label radio radio-label active"><input type="radio" className="checkout-form__input" />Pay by Card Credit</label>
+                        <label htmlFor="" className="checkout-form__label radio radio-label"><input type="radio" className="checkout-form__input" placeholder=''/>Paypal</label>
                         <label htmlFor="" className="checkout-form__label">Card Number<input type="text" className="checkout-form__input" placeholder='1234 1234 1234' /></label>
-                        <label htmlFor="" className="checkout-form__label">Expiration date<input type="text" className="checkout-form__input" placeholder='MM/YY'/></label>
-                        <label htmlFor="" className="checkout-form__label">CVC<input type="text" className="checkout-form__input" placeholder='CVC code'/></label>
+                        <div className="inline">
+                            <label htmlFor="" className="checkout-form__label">Expiration date<input type="text" className="checkout-form__input" placeholder='MM/YY'/></label>
+                            <label htmlFor="" className="checkout-form__label">CVC<input type="text" className="checkout-form__input" placeholder='CVC code'/></label>
+                        </div>
+                        
                     </fieldset>
                     
                     <button type="submit" class="checkout-form__btn main-btn">Place Order</button>

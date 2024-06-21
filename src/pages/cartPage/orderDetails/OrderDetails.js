@@ -22,16 +22,16 @@ const OrderDetails = () => {
                 <form action="" className="order-summary">
                     <h4 className="order-summary__title">Cart summary</h4>
                     <fieldset className="order-summary__shipping">
-                        <label htmlFor="" className="order-summary__shipping-label active">
+                        <label htmlFor="" className="order-summary__shipping-label radio-label active">
                             <input type="radio" className="order-summary__shipping-input" />
                             <span>Free shipping  </span>
                             <span class="price">$0.00</span>
                         </label>
-                        <label htmlFor="" className="order-summary__shipping-label">
+                        <label htmlFor="" className="order-summary__shipping-label radio-label">
                             <input type="radio" className="order-summary__shipping-input" />Express shipping 
                             <span class="price">+$15.00</span>
                         </label>
-                        <label htmlFor="" className="order-summary__shipping-label">
+                        <label htmlFor="" className="order-summary__shipping-label radio-label">
                             <input type="radio" className="order-summary__shipping-input" />Pick Up 
                             <span class="price">%21.00</span>
                         </label>
