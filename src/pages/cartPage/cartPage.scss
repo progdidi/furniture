@@ -23,6 +23,7 @@
             color: #b1b5c3;
             font-family: var(--second-font);
             display: flex;
+            justify-content: flex-start;
             align-items: center;
             gap: 17px;
             border-bottom: 2px solid transparent;
@@ -66,50 +67,7 @@
 
 
 
-.order-summary {
-    width: 413px;
-    padding: 24px;
-    border: 1px solid var(--dark-gray-color);
-    border-radius: 6px;
-    .order-summary__title {
-        font-weight: 500;
-        font-size: 20px;
-        line-height: 140%;
-        color: var(--black-color);
-        margin-bottom: 16px;
-    }
-    .order-summary__shipping {
-        margin-bottom: 16px;
-        border: none;
-        .order-summary__shipping-label {
-            display: block;
-            padding: 13px 16px;
-            border: 1px solid var(--black-color);
-            border-radius: 4px;
-            margin-bottom: 12px;
 
-        }
-        .order-summary__shipping-input {
-        }
-    }
-    
-    .order-sum {
-        .order-sum__item {
-            padding: 13px 0;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-        }
-        .order-sum__item-text {
-        }
-        .order-sum__item-num {
-        }
-    }
-    
-    .order-summary__btn {
-        width: 100%;
-    }
-}
 
 @media (max-width: 900px) {
     .cart {

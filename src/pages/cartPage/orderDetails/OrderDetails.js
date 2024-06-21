@@ -22,23 +22,27 @@ const OrderDetails = () => {
                 <form action="" className="order-summary">
                     <h4 className="order-summary__title">Cart summary</h4>
                     <fieldset className="order-summary__shipping">
-                        <label htmlFor="" className="order-summary__shipping-label">
-                            <input type="radio" className="order-summary__shipping-input" />Free shipping  $0.00
+                        <label htmlFor="" className="order-summary__shipping-label active">
+                            <input type="radio" className="order-summary__shipping-input" />
+                            <span>Free shipping  </span>
+                            <span class="price">$0.00</span>
                         </label>
                         <label htmlFor="" className="order-summary__shipping-label">
-                            <input type="radio" className="order-summary__shipping-input" />Express shipping +$15.00
+                            <input type="radio" className="order-summary__shipping-input" />Express shipping 
+                            <span class="price">+$15.00</span>
                         </label>
                         <label htmlFor="" className="order-summary__shipping-label">
-                            <input type="radio" className="order-summary__shipping-input" />Pick Up %21.00
+                            <input type="radio" className="order-summary__shipping-input" />Pick Up 
+                            <span class="price">%21.00</span>
                         </label>
                     </fieldset>
 
                     <div className="order-sum">
-                        <div className="order-sum__item">
+                        <div className="order-sum__item subtotal">
                             <p className="order-sum__item-text">Subtotal</p>
                             <p className="order-sum__item-num">$1234.00</p>
                         </div>
-                        <div className="order-sum__item">
+                        <div className="order-sum__item total">
                             <p className="order-sum__item-text">Total</p>
                             <p className="order-sum__item-num">$1345.00</p>
                         </div>

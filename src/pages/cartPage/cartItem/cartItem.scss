@@ -1,7 +1,10 @@
 .order-table__item {
-    padding: 24px 0;
     td {
         border-bottom: 1px solid #E8ECEF;
+        padding: 24px 0;
+        &.subtotal {
+            font-weight: 600;
+        }
     }
     .product-item {
         display: flex;

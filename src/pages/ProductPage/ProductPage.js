@@ -6,8 +6,18 @@ import OfferTimer from "./offerTimer/OfferTimer";
 import Counter from "../../components/counter/Counter";
 
 //images
-import example from "./example.png";
+import main from './example.png';
+import sl1 from './ex1.png';
+import sl2 from './ex2.png';
+import sl3 from './ex3.png';
+import col1 from './col1.png';
+import col2 from './col2.png';
+import col3 from './col3.png';
+import col4 from './col4.png';
+
+
 import ProductReview from "./ProductReview/ProductReview";
+import ProductRating from '../../components/productRating/ProductRating';
 
 const ProductPage = () => {
   return (
@@ -18,26 +28,26 @@ const ProductPage = () => {
             <div className="product-media">
               <div className="product-slider">
                 <div className="product-slider__main">
-                  <img src="" alt="" className="product-slider__main-img" />
+                  <img src={main} alt="" className="product-slider__main-img" />
                 </div>
 
                 <div className="product-slider__items">
                   <div className="product-slider__item">
-                    <img src="" alt="" className="product-slider__item-img" />
+                    <img src={sl1} alt="" className="product-slider__item-img" />
                   </div>
 
                   <div className="product-slider__item">
-                    <img src="" alt="" className="product-slider__item-img" />
+                    <img src={sl2} alt="" className="product-slider__item-img" />
                   </div>
 
                   <div className="product-slider__item">
-                    <img src="" alt="" className="product-slider__item-img" />
+                    <img src={sl3} alt="" className="product-slider__item-img" />
                   </div>
                 </div>
               </div>
             </div>
             <div className="product-info">
-              <div className="product-info__rating">5</div>
+              <ProductRating/>
               <a href="" className="product-info__reviews">
                 11 Reviews
               </a>
@@ -60,16 +70,16 @@ const ProductPage = () => {
                 <div className="product-color__main">Black</div>
                 <div className="product-color__items">
                   <div className="product-color__item">
-                    <img src="" alt="" className="product-color__item-img" />
+                    <img src={col1} alt="" className="product-color__item-img" />
                   </div>
                   <div className="product-color__item">
-                    <img src="" alt="" className="product-color__item-img" />
+                    <img src={col2} alt="" className="product-color__item-img" />
                   </div>
                   <div className="product-color__item">
-                    <img src="" alt="" className="product-color__item-img" />
+                    <img src={col3} alt="" className="product-color__item-img" />
                   </div>
                   <div className="product-color__item">
-                    <img src="" alt="" className="product-color__item-img" />
+                    <img src={col4} alt="" className="product-color__item-img" />
                   </div>
                 </div>
               </div>
