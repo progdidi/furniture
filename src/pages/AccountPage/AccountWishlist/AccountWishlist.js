@@ -10,9 +10,10 @@ const AccountWishlist = () => {
 
             <table className="account-wishlist__table">
                 <tr>
-                    <th className="account-wishlist__table-header">Product</th>
+                    <th width="40px"></th>
+                    <th className="account-wishlist__table-header" width="30%">Product</th>
                     <th className="account-wishlist__table-header">Price</th>
-                    <th className="account-wishlist__table-header">Action</th>
+                    <th className="account-wishlist__table-header" width="20%">Action</th>
                 </tr>
 
                 <WishlistItem/>

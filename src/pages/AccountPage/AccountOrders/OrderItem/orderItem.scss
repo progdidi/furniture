@@ -1,0 +1,28 @@
+.order-item {
+
+}
+
+.order-item__mobile {
+    display: none;
+    width: 100%;
+    justify-content: space-between;
+    border-bottom: 1px solid #E8ECEF;
+    padding: 16px 0;
+    text-align: left;
+    .order-item__header-item, .order-item__data-item {
+        margin-bottom: 16px;
+    }
+}
+
+@media (max-width: 600px) {
+    .order-item {
+        display: none;
+    }
+    
+    .order-item__mobile {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+        
+    }
+}

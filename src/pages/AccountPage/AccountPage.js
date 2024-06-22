@@ -17,7 +17,6 @@ const AccountPage = () => {
                     <div className="account-page__menu">
                         <div className="user-info">
                             <img src={example} alt="" className="user-info__img" />
-                            <input type="file" className="user-info__img-btn" />
                             <p className="user-info__name">Sofia Havertz</p>
                         </div>
 
@@ -47,9 +46,9 @@ const AccountPage = () => {
 
                         {/* <AccountAddress/> */}
 
-                        {/* <AccountOrders/> */}
+                        <AccountOrders/>
 
-                        <AccountWishlist/>
+                        {/* <AccountWishlist/> */}
                     </div>
                 </div>
             </div>

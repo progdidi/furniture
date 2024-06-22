@@ -24,3 +24,14 @@
     }
 }
 
+@media (max-width: 600px) {
+    .account-orders {
+        &__table {
+            &-header {
+                display: none;
+            }
+        }
+        
+    }
+}
+

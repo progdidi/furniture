@@ -7,7 +7,6 @@ const ProductSort = () => {
 
     const [showSortMenu, setShowsortMenu] = useState(false);
 
-
     return ( 
         <div className="product-sort">
             <p className="product-sort__text">Sort by</p>

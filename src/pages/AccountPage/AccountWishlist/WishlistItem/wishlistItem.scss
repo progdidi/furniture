@@ -1,5 +1,8 @@
 .wishlist-item {
     &__data {
         padding: 24px 0;
+        .wishlist-item__data-btn {
+            width: 100%;
+        }
     }
 }

@@ -4,6 +4,10 @@
     }
     &__table {
         width: 100%;
+        th {
+            padding-bottom: 8px;
+            border-bottom: 1px solid #E8ECEF;
+        }
         &-header {
             text-align: left;
             font-weight: 400;
@@ -11,8 +15,8 @@
             line-height: 157%;
             color: var(--dark-gray-color);
             font-family: var(--second-font);
-            padding-bottom: 8px;
-            border-bottom: 1px solid #E8ECEF;
+            
+           
         }
     }
     

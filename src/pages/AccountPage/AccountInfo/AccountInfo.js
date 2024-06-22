@@ -15,6 +15,7 @@ const AccountInfo = () => {
                     </label>
                     <label htmlFor="" className="account-info__form-label form-label">Display name *
                         <input type="text" className="account-info__form-input form-input" placeholder='Display name'/>
+                        <p className="account-info__form-comment">This will be how your name will be displayed in the account section and in reviews</p>
                     </label>
                     <label htmlFor="" className="account-info__form-label form-label">Email *
                         <input type="text" className="account-info__form-input form-input" placeholder='Email'/>

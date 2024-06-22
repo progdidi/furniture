@@ -11,6 +11,7 @@
             border-radius: 8px;
             padding: 16px 24px;
             font-family: var(--second-font);
+            position: relative;
             &-title {
                 margin-bottom: 8px;
                 font-weight: 600;
@@ -28,18 +29,12 @@
                 line-height: 162%;
                 color: var(--dark-gray-color);
                 padding-left: 21px;
-                position: relative;
-                &::before {
-                    position: absolute;
-                    content: '';
-                    background-image: url('./edit.svg');
-                    width: 16px;
-                    height: 16px;
-                    background-repeat: no-repeat;
-                    left: 0;
-                    top: 50%;
-                    transform: translateY(-50%);
-                }
+                position: absolute;
+                top: 16px;
+                right: 24px;
+                display: flex;
+                align-items: center;
+                gap: 7px;
             }
         }
         

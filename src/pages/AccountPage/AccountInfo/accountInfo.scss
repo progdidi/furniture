@@ -17,6 +17,16 @@
         }
         &-btn {
         }
+        &-comment {
+            font-family: var(--second-font);
+            font-style: italic;
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 167%;
+            color: var(--dark-gray-color);
+            margin-top: -12px;
+            margin-bottom: 24px;
+        }
     }
 }
 
