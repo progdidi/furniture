@@ -14,6 +14,7 @@ import { products } from "../../helpers/products/products";
 import Newsletter from "../../components/newsletter/Newsletter";
 
 import LayoutChoice from "../../components/layoutChoice/LayoutChoice";
+import ProductSort from "./productSort/ProductSort";
 
 
 const ShopPage = () => {
@@ -38,15 +39,9 @@ const ShopPage = () => {
                 <h4 className="shop-main__title">Living Room</h4>
 
                 <div className="product-view">
-                  <label className="product-sort__label"> Sort by
-                    <select className="product-sort">
-                      <option value="" className="product-sort__item">1</option>
-                      <option value="" className="product-sort__item">2</option>
-                      <option value="" className="product-sort__item">3</option>
-                    </select>
-                  </label>
-                  
 
+                  <ProductSort/>
+                  
                   <LayoutChoice/>
                 </div>
                 

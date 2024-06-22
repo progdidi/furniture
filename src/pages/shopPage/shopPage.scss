@@ -18,6 +18,12 @@
                     line-height: 160%;
                     font-family: var(--second-font);
                 }
+
+                .product-view {
+                    display: flex;
+                    align-items: center;
+                    gap: 32px;
+                }
                 
             }
             .product-items {

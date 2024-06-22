@@ -29,7 +29,7 @@ const OrderCheckout = () => {
                             <label htmlFor="" className="checkout-form__label">Zip Code<input type="text" className="checkout-form__input" placeholder='Zip Code'/></label>
                         </div>
                         
-                        <label htmlFor="" className="checkout-form__label"><input type="checkbox" className="checkout-form__input" />Use a different billing address (optional)</label>
+                        <label htmlFor="" className="checkout-form__label check"><input type="checkbox" className="checkout-form__input" />Use a different billing address (optional)</label>
                     </fieldset>
 
                     <fieldset className="checkout-form__fieldset">

@@ -1,0 +1,53 @@
+.product-sort {
+    display: flex;
+    &__text {
+        font-family: var(--second-font);
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 162%;
+        color: var(--dark-black-color);
+    }
+    &__menu {
+        position: relative;
+        .product-sort__menu-btn {
+
+        }
+        .product-sort__list {
+            display: none;
+            position: absolute;
+            right: 0;
+            top: 26px;
+            background-color: #fff;
+            z-index: 10;
+            width: 200px;
+            border-radius: 5px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+            overflow-y: auto;
+            &-item {
+                cursor: pointer;
+                width: 100%;
+                padding: 10px;
+                display: flex;
+                align-items: center;
+                &:hover {
+                    background-color: var(--gray-color);
+                }
+            }
+            &-input {
+                position: absolute;
+                left: 0;
+                opacity: 0;
+            }
+            &-label {
+                width: 100%;
+                cursor: pointer;
+            }
+
+            &.active {
+                display: block;
+            }
+        }
+        
+    }
+    
+}
