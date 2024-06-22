@@ -10,12 +10,14 @@ import basket from './images/basket.svg';
 
 //components
 import SignUpPopup from '../modals/SignUpPopup/SignUpPopup';
+import CartMenu from './CartMenu/CartMenu';
 
 
 const Header = () => {
 
     const [showMobileMenu, setShowMobileMenu] = useState(false);
     const [showSignup, setShowSignup] = useState(false);
+    const [showCartMenu, setShowCartMenu] = useState(false);
 
     return ( 
         <>
@@ -40,9 +42,9 @@ const Header = () => {
                         <button className="header__btn" onClick={() => setShowSignup(!showSignup)}>
                             <img src={user} alt="" className="header__btn-img" />
                         </button>
-                        <NavLink to="/cart" className="header__btn">
+                        <button className="header__btn" onClick={() => setShowCartMenu(!showCartMenu)}>
                             <img src={basket} alt="" className="header__btn-img" />
-                        </NavLink>
+                        </button>
                     </div>
 
                     <button className="menu-btn" onClick={() => setShowMobileMenu(!showMobileMenu)}>
@@ -56,6 +58,7 @@ const Header = () => {
             </div>
         </header>
         <SignUpPopup showSignUp={showSignup}/>
+        <CartMenu showCartMenu={showCartMenu}/>
         </>
      );
 }

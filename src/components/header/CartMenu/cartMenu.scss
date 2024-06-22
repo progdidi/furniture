@@ -1,0 +1,36 @@
+.cart-menu {
+    background-color: #fff;
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: none;
+    height: 100vh;
+    width: 413px;
+    padding: 40px 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    &.active {
+        display: block;
+    }
+    &__title {
+        font-weight: 500;
+        font-size: 28px;
+        line-height: 121%;
+        letter-spacing: -0.02em;
+        color: #121212;
+        margin-bottom: 16px;
+    }
+
+    &__summary {
+        height: 210px;
+        margin-top: auto;
+    }
+
+    &__link {
+        width: 100%;
+        display: block;
+        text-align: center;
+        margin-bottom: 16px;
+    }
+}

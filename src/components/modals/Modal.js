@@ -1,16 +1,18 @@
 import './modal.scss';
 import { useState } from 'react';
 
-const Modal = ({showModal}) => {
+const Modal = ({showModal, setShowModal}) => {
 
     
 
     return ( 
         <div className={showModal ? "modal active" : "modal"}>
-            <div className="overlay">
-                <div className="modal-content">
-                    <button className="close-btn">X</button>
-                </div>
+            <div className="modal-content">
+                <button className="close-btn" onClick={() => setShowModal(false)}>X</button>
+
+                <p className="modal-text">Are you sure you want to log out?</p>
+
+                <button className="modal-btn main-btn">Log out</button>
             </div>
         </div>
      );
