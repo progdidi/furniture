@@ -3,7 +3,7 @@ import './accountWishlist.scss';
 //components
 import WishlistItem from './WishlistItem/WishlistItem';
 
-const AccountWishlist = () => {
+const AccountWishlist = ({id="wishlist"}) => {
     return ( 
         <div className="account-wishlist">
             <h4 className="account-wishlist__title account__title">Your Wishlist</h4>

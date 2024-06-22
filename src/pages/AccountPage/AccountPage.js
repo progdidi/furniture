@@ -1,4 +1,5 @@
 import './accountPage.scss';
+import { useState } from 'react';
 
 import example from './example.png';
 
@@ -8,7 +9,15 @@ import AccountAddress from './AccountAddress/AccountAddress';
 import AccountOrders from './AccountOrders/AccountOrders';
 import AccountWishlist from './AccountWishlist/AccountWishlist';
 
+//tabs navigation
+import TabNavItem from '../../components/tabsNavigation/tabNavItem/TabNavItem';
+import TabContent from '../../components/tabsNavigation/tabContent/TabContent';
+
 const AccountPage = () => {
+
+    const [activeTab, setActiveTab] = useState("info");
+
+
     return ( 
         <section className="account-page">
             <div className="container">
@@ -21,11 +30,10 @@ const AccountPage = () => {
                         </div>
 
                         <ul className="account-menu__list">
-                            <li className="account-menu__list-item"><button className="account-menu__btn active">Account</button></li>
-                            <li className="account-menu__list-item"><button className="account-menu__btn">Address</button></li>
-                            <li className="account-menu__list-item"><button className="account-menu__btn">Orders</button></li>
-                            <li className="account-menu__list-item"><button className="account-menu__btn">Wishlist</button></li>
-                            <li className="account-menu__list-item"><button className="account-menu__btn">Log Out</button></li>
+                            <TabNavItem title="Account" id="info" activeTab={activeTab} setActiveTab={setActiveTab} tabClass="account-menu__btn"/>
+                            <TabNavItem title="Address" id="address" activeTab={activeTab} setActiveTab={setActiveTab} tabClass="account-menu__btn"/>
+                            <TabNavItem title="Orders" id="orders" activeTab={activeTab} setActiveTab={setActiveTab} tabClass="account-menu__btn"/>
+                            <TabNavItem title="Wishlist" id="wishlist" activeTab={activeTab} setActiveTab={setActiveTab} tabClass="account-menu__btn"/>
                         </ul>
 
                         <select className="account-menu__select">
@@ -42,11 +50,27 @@ const AccountPage = () => {
                        
                     </div>
                     <div className="account-page__info">
+                        <TabContent id="info" activeTab={activeTab}>
+                            <AccountInfo/>
+                        </TabContent>
+
+                        <TabContent id="address" activeTab={activeTab}>
+                            <AccountAddress/> 
+                        </TabContent>
+
+                        <TabContent id="orders" activeTab={activeTab}>
+                            <AccountOrders/>
+                        </TabContent>
+
+                        <TabContent id="wishlist" activeTab={activeTab}>
+                            <AccountWishlist/>
+                        </TabContent>
+
                         {/* <AccountInfo/> */}
 
                         {/* <AccountAddress/> */}
 
-                        <AccountOrders/>
+                        {/* <AccountOrders/> */}
 
                         {/* <AccountWishlist/> */}
                     </div>

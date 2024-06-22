@@ -2,7 +2,7 @@ import './orderDetails.scss';
 
 import CartItem from '../cartItem/CartItem';
 
-const OrderDetails = () => {
+const OrderDetails = ({id="order"}) => {
     return ( 
         <div className="order">
             <div className="order-details">

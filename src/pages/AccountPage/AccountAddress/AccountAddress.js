@@ -1,7 +1,7 @@
 import './accountAddress.scss';
 import editImg from './edit.svg';
 
-const AccountAddress = () => {
+const AccountAddress = ({id="address"}) => {
     return ( 
         <div className="account-address">
             <h5 className="account-address__title account__title">Address</h5>

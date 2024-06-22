@@ -3,7 +3,7 @@ import './orderCheckout.scss';
 //components
 import CartItem from '../cartItem/CartItem';
 
-const OrderCheckout = () => {
+const OrderCheckout = ({id="checkout"}) => {
     return ( 
         <div className="checkout">
             <div className="checkout__main">

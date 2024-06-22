@@ -2,7 +2,7 @@ import './orderComplete.scss';
 
 import example from './example.png';
 
-const OrderComplete = () => {
+const OrderComplete = ({id="complete"}) => {
     return ( 
         <div className="order-complete">
             <h5 className="complete__subtitle">Thank you! 🎉</h5>

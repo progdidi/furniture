@@ -1,12 +1,18 @@
 import './cartPage.scss';
+import { useState } from 'react';
 
 //components
 import OrderDetails from './orderDetails/OrderDetails';
 import OrderCheckout from './orderCheckout/OrderCheckout';
 import OrderComplete from './orderComplete/OrderComplete';
+//tabs
+import TabContent from '../../components/tabsNavigation/tabContent/TabContent';
+import TabNavItem from '../../components/tabsNavigation/tabNavItem/TabNavItem';
 
 
 const CartPage = () => {
+    const [activeTab, setActiveTab] = useState("order");
+
     return ( 
         <>
 
@@ -15,33 +21,28 @@ const CartPage = () => {
                     <h3 className="cart__title">Cart</h3>
 
                     <div className="cart__buttons">
-                        <button className="cart__btn order active">
-                            <span className="cart__btn-num">1</span>
-                            Shopping cart
-                        </button>
-                        <button className="cart__btn checkout">
-                            <span className="cart__btn-num">2</span>
-                            Checkout details
-                        </button>
-                        <button className="cart__btn complete">
-                            <span className="cart__btn-num">3</span>
-                            Order complete
-                        </button>
+                        <TabNavItem title="Shopping cart" id="order" activeTab={activeTab} setActiveTab={setActiveTab} tabClass="cart__btn"></TabNavItem>
+
+                        <TabNavItem title="Checkout details" id="checkout" activeTab={activeTab} setActiveTab={setActiveTab} tabClass="cart__btn"/>
+
+                        <TabNavItem title=" Order complete" id="complete" activeTab={activeTab} setActiveTab={setActiveTab} tabClass="cart__btn"/>
+
+
                     </div>
 
                     <div className="cart__tabs">
-                        {/* <div className="cart-tab order">
+                        <TabContent id="order" activeTab={activeTab}>
                             <OrderDetails/>
-                        </div> */}
+                        </TabContent>
 
-
-                        <div className="cart-tab cart-checkout">
+                        <TabContent id="checkout" activeTab={activeTab}>
                             <OrderCheckout/>
-                        </div>
+                        </TabContent>
 
-                        {/* <div className="cart-tab complete">
+                        <TabContent id="complete" activeTab={activeTab}>
                             <OrderComplete/>
-                        </div> */}
+                        </TabContent>
+
                     </div>
             </div>
         </section>

@@ -1,6 +1,6 @@
 import './accountInfo.scss';
 
-const AccountInfo = () => {
+const AccountInfo = ({id="info"}) => {
     return ( 
         <div className="account-info">
            

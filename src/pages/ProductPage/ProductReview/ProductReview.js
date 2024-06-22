@@ -4,7 +4,7 @@ import ReviewItem from "../reviewItem/ReviewItem";
 import { reviews } from "../../../helpers/reviews/reviews";
 import ProductRating from "../../../components/productRating/ProductRating";
 
-const ProductReview = () => {
+const ProductReview = ({id="reviews"}) => {
     return ( 
         <section className="reviews">
           <div className="container">

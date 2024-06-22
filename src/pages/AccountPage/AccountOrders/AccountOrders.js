@@ -1,7 +1,7 @@
 import './accountOrders.scss';
 import OrderItem from './OrderItem/OrderItem';
 
-const AccountOrders = () => {
+const AccountOrders = ({id="orders"}) => {
     return ( 
         <div className="account-orders">
             <h5 className="account-orders__title account__title">Orders History</h5>

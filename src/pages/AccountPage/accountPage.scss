@@ -36,6 +36,9 @@
         }
         
         .account-menu__list {
+            display: flex;
+            flex-direction: column;
+            text-align: left;
            
         }
 

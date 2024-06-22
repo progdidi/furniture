@@ -1,9 +1,13 @@
 import "./productPage.scss";
+import { useState } from "react";
 
 //components
 import Newsletter from "../../components/newsletter/Newsletter";
 import OfferTimer from "./offerTimer/OfferTimer";
 import Counter from "../../components/counter/Counter";
+//tabs
+import TabNavItem from "../../components/tabsNavigation/tabNavItem/TabNavItem";
+import TabContent from "../../components/tabsNavigation/tabContent/TabContent";
 
 //images
 import main from './example.png';
@@ -19,7 +23,12 @@ import col4 from './col4.png';
 import ProductReview from "./ProductReview/ProductReview";
 import ProductRating from '../../components/productRating/ProductRating';
 
+
+
 const ProductPage = () => {
+
+  const [activeTab, setActiveTab] = useState("reviews");
+
   return (
     <>
       <section className="product">
@@ -111,17 +120,24 @@ const ProductPage = () => {
       <section className="product-tabs">
         <div className="container">
           <div className="product-tabs__buttons">
-            <button className="product-tabs__btn">Additional Info</button>
-            <button className="product-tabs__btn">Questions</button>
-            <button className="product-tabs__btn active">Reviews</button>
+              <TabNavItem title="Additional Info" id="additional" activeTab={activeTab} setActiveTab={setActiveTab} tabClass="product-tabs__btn"/>
+              <TabNavItem title="Questions" id="questions" activeTab={activeTab} setActiveTab={setActiveTab} tabClass="product-tabs__btn"/>
+              <TabNavItem title="Reviews" id="reviews" activeTab={activeTab} setActiveTab={setActiveTab} tabClass="product-tabs__btn"/>
           </div>
 
           <div className="product-tabs__info">
-            <div className="product-tabs__item"></div>
-            <div className="product-tabs__item"></div>
-            <div className="product-tabs__item product-review">
+            <TabContent id="additional" activeTab={activeTab}>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laudantium ducimus natus reprehenderit! Laboriosam sunt, itaque cupiditate non perferendis blanditiis eligendi quam repellat deleniti tempore porro exercitationem consectetur officia ducimus reprehenderit!</p>
+            </TabContent>
+
+            <TabContent id="questions" activeTab={activeTab}>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laudantium ducimus natus reprehenderit! Laboriosam sunt, itaque cupiditate non perferendis blanditiis eligendi quam repellat deleniti tempore porro exercitationem consectetur officia ducimus reprehenderit!</p>
+            </TabContent>
+
+            <TabContent id="reviews" activeTab={activeTab}>
               <ProductReview/>
-            </div>
+            </TabContent>
+
           </div>
         </div>
         
