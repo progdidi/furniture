@@ -8,6 +8,7 @@ import AccountInfo from './AccountInfo/AccountInfo';
 import AccountAddress from './AccountAddress/AccountAddress';
 import AccountOrders from './AccountOrders/AccountOrders';
 import AccountWishlist from './AccountWishlist/AccountWishlist';
+import Modal from '../../components/modals/Modal';
 
 //tabs navigation
 import TabNavItem from '../../components/tabsNavigation/tabNavItem/TabNavItem';
@@ -16,6 +17,7 @@ import TabContent from '../../components/tabsNavigation/tabContent/TabContent';
 const AccountPage = () => {
 
     const [activeTab, setActiveTab] = useState("info");
+    const [showModal, setShowModal] = useState(false);
 
 
     return ( 
@@ -34,6 +36,7 @@ const AccountPage = () => {
                             <TabNavItem title="Address" id="address" activeTab={activeTab} setActiveTab={setActiveTab} tabClass="account-menu__btn"/>
                             <TabNavItem title="Orders" id="orders" activeTab={activeTab} setActiveTab={setActiveTab} tabClass="account-menu__btn"/>
                             <TabNavItem title="Wishlist" id="wishlist" activeTab={activeTab} setActiveTab={setActiveTab} tabClass="account-menu__btn"/>
+                            <button className="account-menu__btn log-out" onClick={() => setShowModal(true)}>Log Out</button>
                         </ul>
 
                         <select className="account-menu__select">
@@ -66,16 +69,11 @@ const AccountPage = () => {
                             <AccountWishlist/>
                         </TabContent>
 
-                        {/* <AccountInfo/> */}
-
-                        {/* <AccountAddress/> */}
-
-                        {/* <AccountOrders/> */}
-
-                        {/* <AccountWishlist/> */}
                     </div>
                 </div>
             </div>
+
+            <Modal showModal={showModal}/>
         </section>
      );
 }

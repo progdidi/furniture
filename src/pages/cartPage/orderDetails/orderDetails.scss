@@ -12,6 +12,9 @@
                 th {
                     border-bottom: 1px solid var(--dark-gray-color);
                     padding-bottom: 24px;
+                    &.subtotal {
+                        text-align: right;
+                    }
                 }
             }
         }

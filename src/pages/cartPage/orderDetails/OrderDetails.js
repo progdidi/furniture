@@ -11,7 +11,7 @@ const OrderDetails = ({id="order"}) => {
                         <th className="order-table__product" width="50%">Product</th>
                         <th>Quantity</th>
                         <th>Price</th>
-                        <th>Subtotal</th>
+                        <th className="subtotal">Subtotal</th>
                     </tr>
 
                     <CartItem/>

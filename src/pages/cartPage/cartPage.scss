@@ -28,6 +28,7 @@
             gap: 17px;
             border-bottom: 2px solid transparent;
             padding-bottom: 26px;
+            transition: all 0.3s;
             span {
                 display: flex;
                 justify-content: center;
@@ -40,6 +41,14 @@
             }
 
             &.active {
+                color: #23262f;
+                border-bottom: 2px solid #23262f;
+                span {
+                    background-color: #23262f;
+
+                }
+            }
+            &:hover {
                 color: #23262f;
                 border-bottom: 2px solid #23262f;
                 span {

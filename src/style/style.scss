@@ -26,6 +26,10 @@ body {
   margin: 0 auto;
 }
 
+table {
+  border-collapse: collapse;
+}
+
 .page__title {
   font-weight: 500;
   font-size: 54px;
@@ -101,8 +105,22 @@ body {
 }
 .main-link {
   border-bottom: 1px solid var(--black-color);
-  padding-right: 20px;
+  padding-right: 25px;
+  width: fit-content;
+  display: block;
   position: relative;
+  &::after {
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    background-image: url('../images/arrow.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+  }
 }
 
 .white-btn {

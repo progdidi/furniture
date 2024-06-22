@@ -21,11 +21,25 @@ const CartPage = () => {
                     <h3 className="cart__title">Cart</h3>
 
                     <div className="cart__buttons">
-                        <TabNavItem title="Shopping cart" id="order" activeTab={activeTab} setActiveTab={setActiveTab} tabClass="cart__btn"></TabNavItem>
+                        <div className="cart__btn">
+                            <span>1</span>
+                            <TabNavItem title="Shopping cart" id="order" activeTab={activeTab} setActiveTab={setActiveTab} tabClass="cart__btn-item"></TabNavItem>
+                        </div>
 
-                        <TabNavItem title="Checkout details" id="checkout" activeTab={activeTab} setActiveTab={setActiveTab} tabClass="cart__btn"/>
+                        <div className="cart__btn">
+                            <span>2</span>
+                            <TabNavItem title="Checkout details" id="checkout" activeTab={activeTab} setActiveTab={setActiveTab} tabClass="cart__btn-item"/>
 
-                        <TabNavItem title=" Order complete" id="complete" activeTab={activeTab} setActiveTab={setActiveTab} tabClass="cart__btn"/>
+                        </div>
+
+                        <div className="cart__btn">
+                            <span>3</span>
+                            <TabNavItem title=" Order complete" id="complete" activeTab={activeTab} setActiveTab={setActiveTab} tabClass="cart__btn-item"/>
+                        </div>
+                        
+
+                        
+                        
 
 
                     </div>

@@ -75,7 +75,7 @@ const MainPage = () => {
         <div className="container">
           <div className="section__top">
             <h3 className="arrivals__title section__title">New Arrivals</h3>
-            <a href="" className="arrivals__link section__link">
+            <a href="" className="arrivals__link section__link main-link">
               More Products
             </a>
           </div>
@@ -122,7 +122,7 @@ const MainPage = () => {
         <div className="container">
           <div className="section__top">
             <h3 className="articles__title section__title">Articles</h3>
-            <a href="" className="articles__link section__link">
+            <a href="" className="articles__link section__link main-link">
               More Articles
             </a>
           </div>

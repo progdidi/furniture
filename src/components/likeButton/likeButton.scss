@@ -1,0 +1,13 @@
+.like-btn {
+    border: 1px solid #141718;
+    border-radius: 8px;
+    padding: 10px 40px;
+    color: var(--black-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+    &__img {
+
+    }
+}

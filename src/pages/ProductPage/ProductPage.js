@@ -5,6 +5,7 @@ import { useState } from "react";
 import Newsletter from "../../components/newsletter/Newsletter";
 import OfferTimer from "./offerTimer/OfferTimer";
 import Counter from "../../components/counter/Counter";
+import LikeBtn from "../../components/likeButton/LikeButton";
 //tabs
 import TabNavItem from "../../components/tabsNavigation/tabNavItem/TabNavItem";
 import TabContent from "../../components/tabsNavigation/tabContent/TabContent";
@@ -95,7 +96,7 @@ const ProductPage = () => {
 
               <div className="product__buttons">
                 <Counter/>
-                <button className="product-btn like">Wishlist</button>
+                <LikeBtn/>
                 <button className="product-btn basket main-btn">
                   Add to Cart
                 </button>
@@ -127,11 +128,11 @@ const ProductPage = () => {
 
           <div className="product-tabs__info">
             <TabContent id="additional" activeTab={activeTab}>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laudantium ducimus natus reprehenderit! Laboriosam sunt, itaque cupiditate non perferendis blanditiis eligendi quam repellat deleniti tempore porro exercitationem consectetur officia ducimus reprehenderit!</p>
+                <p class="product-tabs__info-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laudantium ducimus natus reprehenderit! Laboriosam sunt, itaque cupiditate non perferendis blanditiis eligendi quam repellat deleniti tempore porro exercitationem consectetur officia ducimus reprehenderit!</p>
             </TabContent>
 
             <TabContent id="questions" activeTab={activeTab}>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laudantium ducimus natus reprehenderit! Laboriosam sunt, itaque cupiditate non perferendis blanditiis eligendi quam repellat deleniti tempore porro exercitationem consectetur officia ducimus reprehenderit!</p>
+                <p class="product-tabs__info-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laudantium ducimus natus reprehenderit! Laboriosam sunt, itaque cupiditate non perferendis blanditiis eligendi quam repellat deleniti tempore porro exercitationem consectetur officia ducimus reprehenderit!</p>
             </TabContent>
 
             <TabContent id="reviews" activeTab={activeTab}>

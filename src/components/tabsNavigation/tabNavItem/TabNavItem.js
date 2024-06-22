@@ -6,7 +6,7 @@ const TabNavItem = ({id, title, activeTab, setActiveTab, tabClass}) => {
 
     return ( 
         <button 
-            className={activeTab === id ? `${tabClass} active` : {tabClass}} 
+            className={activeTab === id ? `${tabClass} active` : `${tabClass}`} 
             id="order" 
             onClick={switchTab}>
 
