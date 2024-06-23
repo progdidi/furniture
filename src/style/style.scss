@@ -19,6 +19,44 @@ body {
   margin: 0 auto;
 }
 
+.navigation {
+  padding: 16px 0;
+  &__inner {
+    font-family: var(--second-font);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 171%;
+    color: #605f5f;
+    display: flex;
+    gap: 16px;
+    align-items: center;
+    .navigation__link {
+      display: block;
+      position: relative;
+      padding-right: 17px;
+      &::after {
+        content: '';
+        position: absolute;
+        width: 12px;
+        height: 12px;
+        background-image: url('../images/chevron.svg');
+        background-repeat: no-repeat;
+        background-position: center center;
+        right: 0;
+        top: 50%;
+        transform: translateY(-50%);
+      }
+
+    }
+
+    .navigation__current {
+      font-weight: 500;
+      color: #121212;
+
+    }
+  }
+}
+
 
 .container-fluid {
   max-width: 1420px;

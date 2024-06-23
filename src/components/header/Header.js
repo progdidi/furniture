@@ -9,7 +9,7 @@ import user from './images/user.svg';
 import basket from './images/basket.svg';
 
 //components
-import SignUpPopup from '../modals/SignUpPopup/SignUpPopup';
+import SignUp from '../modals/SignUp/SignUp';
 import Modal from '../modals/Modal';
 
 
@@ -57,7 +57,7 @@ const Header = () => {
                 
             </div>
         </header>
-        <SignUpPopup showSignUp={showSignup}/>
+        <SignUp showSignUp={showSignup}/>
         <Modal showModal={showModal} setShowModal={setShowModal} activeModal="cart"/>
         </>
      );

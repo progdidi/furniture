@@ -1,11 +1,14 @@
 import "./productPage.scss";
 import { useState } from "react";
+import { NavLink } from "react-router-dom";
 
 //components
 import Newsletter from "../../components/newsletter/Newsletter";
 import OfferTimer from "./offerTimer/OfferTimer";
 import Counter from "../../components/counter/Counter";
 import LikeBtn from "../../components/likeButton/LikeButton";
+import ProductReview from "./ProductReview/ProductReview";
+import ProductRating from '../../components/productRating/ProductRating';
 //tabs
 import TabNavItem from "../../components/tabsNavigation/tabNavItem/TabNavItem";
 import TabContent from "../../components/tabsNavigation/tabContent/TabContent";
@@ -21,8 +24,7 @@ import col3 from './col3.png';
 import col4 from './col4.png';
 
 
-import ProductReview from "./ProductReview/ProductReview";
-import ProductRating from '../../components/productRating/ProductRating';
+
 
 
 
@@ -32,6 +34,17 @@ const ProductPage = () => {
 
   return (
     <>
+
+      <div className="navigation">
+        <div className="container">
+          <div className="navigation__inner">
+            <NavLink to="/" className="navigation__link">Home</NavLink>
+            <NavLink to="/shop" className="navigation__link">Shop</NavLink>
+            <NavLink to="/shop" className="navigation__link">Living Room</NavLink>
+            <p className="navigation__current">Product</p>
+          </div>
+        </div>
+      </div>
       <section className="product">
         <div className="container">
           <div className="product__inner">

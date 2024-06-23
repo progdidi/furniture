@@ -1,4 +1,5 @@
 import './articlePage.scss';
+import { NavLink } from 'react-router-dom';
 
 //images
 import example from './example.png';
@@ -15,8 +16,19 @@ import Newsletter from '../../components/newsletter/Newsletter';
 const ArticlePage = ({title, mainImg, author, date, gal1, gal2}) => {
     return ( 
         <>
+        <div className="navigation">
+            <div className="container">
+                <div className="navigation__inner">
+                    <NavLink to="/" className="navigation__link">Home</NavLink>
+                    <NavLink to="/blog" className="navigation__link">Blog</NavLink>
+                    <p className="navigation__current">How to make a busy bathroom a place to relax</p>
+                </div>
+            </div>
+        </div>
+
         <section className="article-page">
             <div className="container">
+                <h6 className="article-page__sub">Article</h6>
                 <h3 className="article-page__title page__title">How to make a busy bathroom a place to relax</h3>
                 <div className="article-page__info">
                     <p className="article-page__info-author">Henrik Annemark</p>

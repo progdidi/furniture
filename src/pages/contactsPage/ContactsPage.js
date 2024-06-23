@@ -1,4 +1,5 @@
 import './contactsPage.scss';
+import { NavLink } from 'react-router-dom';
 
 //images
 import contacts from './contacts.png';
@@ -12,6 +13,14 @@ import Benefits from '../../components/benefits/Benefits';
 const ContactsPage = () => {
     return ( 
         <>
+            <div className="navigation">
+                <div className="container">
+                    <div className="navigation__inner">
+                        <NavLink to="/" className="navigation__link">Home</NavLink>
+                        <p className="navigation__current">Contact Us</p>
+                    </div>
+                </div>
+            </div>
             <section className="about">
                 <div className="container">
                     <h4 className="about__title page__title">We believe in sustainable decor. We’re passionate about life at home.</h4>

@@ -2,16 +2,19 @@
   &__inner {
     height: 392px;
     text-align: center;
-    padding-top: 115px;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
     .page-preview__title {
       font-weight: 500;
       font-size: 54px;
       line-height: 107%;
       letter-spacing: -0.02em;
-      margin-bottom: 24px;
     }
     .page-preview__descr {
       font-size: 20px;

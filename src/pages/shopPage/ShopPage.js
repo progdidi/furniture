@@ -24,6 +24,7 @@ const ShopPage = () => {
         title="Shop Page"
         descr="Let’s design the place you always imagined."
         bgImage={banner}
+        currentPage="Shop"
       />
 
       <section className="shop">

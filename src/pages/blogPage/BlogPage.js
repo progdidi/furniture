@@ -21,6 +21,7 @@ const BlogPage = () => {
                 title="Our Blog"
                 descr="Home ideas and design inspiration"
                 bgImage={banner}
+                currentPage="Blog"
             />
 
             <section className="blog">
