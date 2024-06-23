@@ -14,11 +14,11 @@ const CartMenu = ({showCartMenu}) => {
             </table>
 
             <div className="cart-menu__summary">
-                <tr class="subtotal">
+                <tr class="summary-subtotal">
                     <td>Subtotal</td>
                     <td>$99.00</td>
                 </tr>
-                <tr class="total">
+                <tr class="summary-total">
                     <td>Total</td>
                     <td>$234.00</td>
                 </tr>

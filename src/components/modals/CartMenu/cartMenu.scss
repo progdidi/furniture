@@ -23,6 +23,27 @@
         margin-bottom: 16px;
     }
 
+    .cart-menu__table {
+        .order-table__item {
+            position: relative;
+            .total {
+                display: none;
+            }
+            .counter {
+                position: absolute;
+                bottom: 25px;
+                left: 93px;
+            }
+            .product-item__info-btn {
+                position: absolute;
+                right: 0;
+            }
+            .product-item {
+                align-items: flex-start;
+            }
+        }
+    }
+
     &__summary {
         height: 210px;
         margin-top: auto;

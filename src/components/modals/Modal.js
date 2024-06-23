@@ -14,7 +14,7 @@ const Modal = ({showModal, setShowModal, activeModal, children}) => {
 
     return ( 
         <div className={showModal ? "modal active" : "modal"} onClick={() => setShowModal(false)}>
-            <div className={showModal ? "modal-content active" : "modal-content"} onClick={(e) => e.stopPropagation()}>
+            <div className={showModal ? "modal-window active" : activeModal === "cart" ? "modal-window active cart" : "modal-window"} onClick={(e) => e.stopPropagation()}>
 
                 <button className="close-btn" onClick={() => setShowModal(false)}>X</button>
 
