@@ -1,10 +1,8 @@
-import './logOut.scss';
-
 const LogOut = () => {
     return ( 
-        <div className="log-out">
-            <p className="log-out__text">Are you sure you want to log out?</p>
-            <button className="log-out__btn main-btn">Log out</button>
+        <div className="modal-info">
+            <p className="modal-info__text">Are you sure you want to log out?</p>
+            <button className="modal-info__btn main-btn">Log out</button>
         </div>
      );
 }

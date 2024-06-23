@@ -4,6 +4,7 @@ import './modal.scss';
 import ModalContent from './ModalContent/ModalContent';
 import LogOut from './logOut/logOut';
 import CartMenu from './CartMenu/CartMenu';
+import NewsletterModal from './NewsletterModal/NewsletterModal';
 
 
 
@@ -25,6 +26,10 @@ const Modal = ({showModal, setShowModal, activeModal, children}) => {
 
                 <ModalContent id="cart" activeModal={activeModal}>
                     <CartMenu/>
+                </ModalContent>
+
+                <ModalContent id="newsletter" activeModal={activeModal}>
+                    <NewsletterModal/>
                 </ModalContent>
 
                 
