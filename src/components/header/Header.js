@@ -1,5 +1,6 @@
 import { NavLink } from 'react-router-dom';
 import { useState } from 'react';
+import { useEffect } from 'react';
 //styles
 import './header.scss';
 
@@ -19,9 +20,21 @@ const Header = () => {
     const [showSignup, setShowSignup] = useState(false);
     const [showModal, setShowModal] = useState(false);
 
+    const [menuFixed, setMenuFixed] = useState('header');
+
+    const fixingMenu = () => {
+        if(window !== undefined) {
+            let windowHeight = window.scrollY;
+            windowHeight > 200 ? setMenuFixed('header fixed') : setMenuFixed('header');
+        }
+    }
+    useEffect(() => {
+        window.addEventListener('scroll', fixingMenu);
+    })
+
     return ( 
         <>
-        <header className="header">
+        <header className={menuFixed}>
             <div className="container">
                 <div className="header__inner">
                     <NavLink to="/" className="logo">Furniture</NavLink>
