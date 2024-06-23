@@ -73,7 +73,7 @@ const AccountPage = () => {
                 </div>
             </div>
 
-            <Modal showModal={showModal} setShowModal={setShowModal}/>
+            <Modal showModal={showModal} setShowModal={setShowModal} activeModal="logout"/>
         </section>
      );
 }

@@ -1,18 +1,33 @@
 import './modal.scss';
-import { useState } from 'react';
 
-const Modal = ({showModal, setShowModal}) => {
+//components
+import ModalContent from './ModalContent/ModalContent';
+import LogOut from './logOut/logOut';
+import CartMenu from './CartMenu/CartMenu';
+
+
+
+const Modal = ({showModal, setShowModal, activeModal, children}) => {
 
     
 
     return ( 
-        <div className={showModal ? "modal active" : "modal"}>
-            <div className="modal-content">
+        <div className={showModal ? "modal active" : "modal"} onClick={() => setShowModal(false)}>
+            <div className={showModal ? "modal-content active" : "modal-content"} onClick={(e) => e.stopPropagation()}>
+
                 <button className="close-btn" onClick={() => setShowModal(false)}>X</button>
 
-                <p className="modal-text">Are you sure you want to log out?</p>
+                {children}
 
-                <button className="modal-btn main-btn">Log out</button>
+                <ModalContent id="logout" activeModal={activeModal}>
+                    <LogOut/>
+                </ModalContent>
+
+                <ModalContent id="cart" activeModal={activeModal}>
+                    <CartMenu/>
+                </ModalContent>
+
+                
             </div>
         </div>
      );
