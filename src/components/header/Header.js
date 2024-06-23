@@ -5,13 +5,13 @@ import { useEffect } from 'react';
 import './header.scss';
 
 //images
-import search from './images/search.svg';
 import user from './images/user.svg';
 import basket from './images/basket.svg';
 
 //components
 import SignUp from '../modals/SignUp/SignUp';
 import Modal from '../modals/Modal';
+import SearchInput from './searchInput/SearchInput';
 
 
 const Header = () => {
@@ -49,9 +49,7 @@ const Header = () => {
                     </nav>
 
                     <div className="header__buttons">
-                        <button className="header__btn">
-                            <img src={search} alt="" className="header__btn-img" />
-                        </button>
+                        <SearchInput/>
                         <button className="header__btn" onClick={() => setShowSignup(!showSignup)}>
                             <img src={user} alt="" className="header__btn-img" />
                         </button>

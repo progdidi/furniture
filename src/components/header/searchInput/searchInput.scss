@@ -1,0 +1,25 @@
+.search-form {
+    display: flex;
+    align-items: center;
+    position: relative;
+    min-width: 100px;
+    &__input {
+        width: 0;
+        transition: all 0.3s;
+        border: 1px solid var(--dark-gray-color);
+        border-radius: 15px;
+        transform: translateX(-100%);
+        padding: 5px;
+        &.active {
+            width: 100%;
+            transform: translateX(0);
+        }
+    }
+
+    &__btn {
+        position: absolute;
+        right: 5px;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+}
