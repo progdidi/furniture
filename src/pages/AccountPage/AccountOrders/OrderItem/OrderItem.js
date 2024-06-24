@@ -1,13 +1,13 @@
 import './orderItem.scss';
 
-const OrderItem = ({number, data, status, summ}) => {
+const OrderItem = ({numberID, dates, status, price}) => {
     return ( 
         <>
             <tr className="order-item">
-                <th className="account-orders__table-data">#3456_768</th>
-                <th className="account-orders__table-data">October 11, 2023</th>
-                <th className="account-orders__table-data">Delivered</th>
-                <th className="account-orders__table-data">$1234.00</th>
+                <th className="account-orders__table-data">{numberID}</th>
+                <th className="account-orders__table-data">{dates}</th>
+                <th className="account-orders__table-data">{status}</th>
+                <th className="account-orders__table-data">${price}</th>
             </tr>
 
             <div className="order-item__mobile">
@@ -19,10 +19,10 @@ const OrderItem = ({number, data, status, summ}) => {
                 </ul>
 
                 <ul className="order-item__data">
-                    <li className="order-item__data-item">#3456_768</li>
-                    <li className="order-item__data-item">October 11, 2023</li>
-                    <li className="order-item__data-item">Delivered</li>
-                    <li className="order-item__data-item">$1234.00</li>
+                    <li className="order-item__data-item">{numberID}</li>
+                    <li className="order-item__data-item">{dates}</li>
+                    <li className="order-item__data-item">{status}</li>
+                    <li className="order-item__data-item">${price}</li>
                 </ul>
             </div>
         </>

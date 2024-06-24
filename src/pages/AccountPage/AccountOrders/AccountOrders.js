@@ -1,4 +1,5 @@
 import './accountOrders.scss';
+import { orders } from '../../../helpers/orders/orders';
 import OrderItem from './OrderItem/OrderItem';
 
 const AccountOrders = ({id="orders"}) => {
@@ -14,11 +15,18 @@ const AccountOrders = ({id="orders"}) => {
                     <th className="account-orders__table-header">Price</th>
                 </tr>
 
-                <OrderItem/>
-                <OrderItem/>
-                <OrderItem/>
-                <OrderItem/>
-                <OrderItem/>
+                {orders.map((order) => {
+                    return (
+                        <OrderItem
+                        numberID={order.numberID}
+                        dates={order.dates}
+                        status={order.status}
+                        price={order.price}
+                        key={order.id}
+                        />
+                    );
+                })}
+
             </table>
         </div>
      );

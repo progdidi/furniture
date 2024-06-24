@@ -1,4 +1,5 @@
 import "./mainPage.scss";
+import { NavLink } from "react-router-dom";
 
 //images
 import promo from "./images/promo.png";
@@ -75,9 +76,8 @@ const MainPage = () => {
         <div className="container">
           <div className="section__top">
             <h3 className="arrivals__title section__title">New Arrivals</h3>
-            <a href="" className="arrivals__link section__link main-link">
-              More Products
-            </a>
+            <NavLink to="/shop" className="arrivals__link section__link main-link"> More Products</NavLink>
+           
           </div>
 
           <div className="arrivals__items">
@@ -110,9 +110,8 @@ const MainPage = () => {
                 It’s more affordable than ever to give every room in your home a
                 stylish makeover
               </p>
-              <a href="" className="promotion__info-link main-link">
-                Shop Now
-              </a>
+              <NavLink to="/shop" className="promotion__info-link main-link">Shop Now</NavLink>
+              
             </div>
           </div>
         </div>
@@ -122,9 +121,8 @@ const MainPage = () => {
         <div className="container">
           <div className="section__top">
             <h3 className="articles__title section__title">Articles</h3>
-            <a href="" className="articles__link section__link main-link">
-              More Articles
-            </a>
+            <NavLink to="/blog" className="articles__link section__link main-link"> More Articles</NavLink>
+           
           </div>
           <div className="articles__inner">
             {articles.slice(0, 3).map((article) => {

@@ -3,7 +3,10 @@ import "./productCard.scss";
 import star from "./star.svg";
 import like from "./like.svg";
 
-const ProductCard = ({ img, name, price }) => {
+//components
+import LikeBtn from "../likeButton/LikeButton";
+
+const ProductCard = ({ img, name, price, descr }) => {
   return (
     <a href="" className="product-card">
       <div className="product-card__main">
@@ -11,9 +14,7 @@ const ProductCard = ({ img, name, price }) => {
         <p className="product-card__tag sale">-50%</p>
         <img src={img} alt="" className="product-card__img" />
         <div className="product-card__overlay">
-          <button className="like-btn">
-            <img src={like} alt="" className="like-btn__img" />
-          </button>
+          <LikeBtn/>
 
           <button className="product-card__btn main-btn">Add to cart</button>
         </div>
@@ -30,6 +31,12 @@ const ProductCard = ({ img, name, price }) => {
 
         <h6 className="product-card__title">{name}</h6>
         <p className="product-card__price">${price}</p>
+
+        <p className="product-card__descr">Super-soft cushion cover in off-white with a tactile pattern that enhances the different tones in the pile and base.</p>
+        <div className="product-card__info-buttons">
+          <button className="product-card__btn main-btn">Add to cart</button>
+          <LikeBtn/>
+        </div>
       </div>
     </a>
   );

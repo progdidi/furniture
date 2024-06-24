@@ -9,6 +9,7 @@ import AccountAddress from './AccountAddress/AccountAddress';
 import AccountOrders from './AccountOrders/AccountOrders';
 import AccountWishlist from './AccountWishlist/AccountWishlist';
 import Modal from '../../components/modals/Modal';
+import { users } from '../../helpers/users/users';
 
 //tabs navigation
 import TabNavItem from '../../components/tabsNavigation/tabNavItem/TabNavItem';

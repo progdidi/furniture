@@ -32,7 +32,7 @@ const ContactsPage = () => {
                             <h5 className="about-main__info-title section__title">About Us</h5>
                             <p className="about-main__info-text">3legant is a gift & decorations store based in HCMC, Vietnam. Est since 2019. 
 Our customer service is always prepared to support you 24/7</p>
-                            <a href="" className="about-main__info-link main-link">Shop Now</a>
+                            <NavLink to="/shop" className="about-main__info-link main-link">Shop Now</NavLink>
                         </div>
                     </div>
                 </div>
@@ -50,12 +50,12 @@ Our customer service is always prepared to support you 24/7</p>
                         <div className="contacts__item">
                             <img src={con2} alt="" className="contacts__item-img" />
                             <h6 className="contacts__item-title">Contact Us</h6>
-                            <p className="contacts__item-text">+84 234 567 890</p>
+                            <a href="tel:+84234567890" className="contacts__item-text">+84 234 567 890</a>
                         </div>
                         <div className="contacts__item">
                             <img src={con3} alt="" className="contacts__item-img" />
                             <h6 className="contacts__item-title">Email</h6>
-                            <p className="contacts__item-text">hello@3legant.com</p>
+                            <a href="mailto:hello@3legant.com" className="contacts__item-text">hello@3legant.com</a>
                         </div>
                     </div>
 

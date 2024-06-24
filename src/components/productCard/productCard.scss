@@ -35,16 +35,19 @@
       opacity: 0;
       transition: all 0.3s;
       .like-btn {
+        padding: 6px;
         background-color: #fff;
         border-radius: 50%;
         width: 32px;
         height: 32px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
         position: absolute;
         top: 16px;
         right: 16px;
+        gap: 0;
+        border: none;
+        &__text {
+          display: none;
+        }
       }
       .product-card__btn {
         position: absolute;
@@ -76,12 +79,42 @@
       font-size: 14px;
       line-height: 157%;
     }
+
+
+    .product-card__descr {
+      display: none;
+    }
+
+    .product-card__info-buttons {
+      display: none;
+    }
   }
 
   &:hover {
     .product-card__main {
       .product-card__overlay {
         opacity: 1;
+      }
+    }
+  }
+
+  &.descr {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    .product-card__info {
+      padding: 24px;
+      .product-card__descr {
+        display: block;
+        padding-top: 16px;
+        padding-bottom: 24px;
+      }
+  
+      .product-card__info-buttons {
+        display: block;
+        width: 100%;
+        button {
+          width: 100%;
+        }
       }
     }
   }
