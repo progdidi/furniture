@@ -21,12 +21,22 @@ import Newsletter from "../../components/newsletter/Newsletter";
 
 import Benefits from "../../components/benefits/Benefits";
 
+import Slider from "../../components/slider/Slider";
+import { promoSlider } from "../../helpers/promoSlider/promoSlider";
+
 const MainPage = () => {
+
   return (
     <>
       <section className="promo">
         <div className="container">
           <div className="promo-slider">
+
+
+            <Slider dataSlider={promoSlider}/>
+
+
+
             <div className="promo-slider__items">
               <div className="promo-slider__item">
                 <img src={promo} alt="" className="promo-slider__item-img" />

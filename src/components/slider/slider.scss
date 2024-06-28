@@ -1,0 +1,29 @@
+.slider-wrapper {
+    display: flex;
+    max-width: 100%;
+    overflow: hidden;
+    position: relative;
+    .slide {
+        width: 100%;
+    }
+
+    .slider__buttons {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        left: 32px;
+        right: 32px;
+        button {            
+            background-color: #fff;
+            border-radius: 50%;
+            width: 30px;
+            height: 30px;
+            img {
+                object-fit: cover;
+            }
+        }
+    }
+}

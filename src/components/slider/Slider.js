@@ -1,7 +1,8 @@
 import { useState } from "react";
 import SliderBtn from "./SliderBtn";
+import './slider.scss';
 
-const Slider = () => {
+const Slider = ({dataSlider}) => {
     const [slideIndex, setSlideIndex] = useState(1);
 
 
@@ -29,8 +30,35 @@ const Slider = () => {
 
     return ( 
         <div className="slider-wrapper">
-            <SliderBtn moveSlide={nextSlide} direction={"next"}/>
-            <SliderBtn moveSlide={prevSlide} direction={"prev"}/>
+            {dataSlider.map((obj, index, img) => {
+                return (
+                    <div
+                    key={obj.id}
+                    className={slideIndex === index + 1 ? "slide active-anim" : "slide"}
+                    >
+                        <img 
+                        src={obj.img} 
+                        />
+                    </div>
+                )
+            })}
+
+            <div className="slider__buttons">
+                <SliderBtn moveSlide={prevSlide} direction={"prev"}/>
+                <SliderBtn moveSlide={nextSlide} direction={"next"}/>
+                
+            </div>
+
+            
+
+            <div className="slider__dots">
+                {Array.from({length: 5}).map((item, index) => (
+                    <div 
+                    onClick={() => moveDot(index + 1)}
+                    className={slideIndex === index + 1 ? "slider-dot active" : "slider-dot"}
+                    ></div>
+                ))}
+            </div>
         </div>
      );
 }
