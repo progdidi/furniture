@@ -4,7 +4,7 @@ import { useState } from 'react';
 
 const SearchInput = () => {
 
-    const [showSearchForm, setShowSearchForm] = useState('false');
+    const [showSearchForm, setShowSearchForm] = useState(false);
 
     return ( 
         <div className="search-form">

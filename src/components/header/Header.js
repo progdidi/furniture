@@ -68,7 +68,7 @@ const Header = () => {
                 
             </div>
         </header>
-        <SignUp showSignUp={showSignup}/>
+        <SignUp showSignUp={showSignup} setShowSignup={setShowSignup}/>
         <Modal showModal={showModal} setShowModal={setShowModal} activeModal="cart"/>
         </>
      );

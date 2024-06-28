@@ -16,6 +16,9 @@ const products = [
     price: 199.0,
     img: pr1,
     rating: 5,
+    collection: 'bedroom',
+    tag: '',
+    sale: '',
     id: 1,
   },
 
@@ -24,6 +27,9 @@ const products = [
     price: 199.0,
     img: pr2,
     rating: 5,
+    collection: 'bedroom',    
+    tag: '',
+    sale: '',
     id: 2,
   },
 
@@ -32,6 +38,9 @@ const products = [
     price: 199.0,
     img: pr3,
     rating: 5,
+    collection: 'bedroom',
+    tag: '',
+    sale: '',
     id: 3,
   },
 
@@ -40,6 +49,9 @@ const products = [
     price: 199.0,
     img: pr4,
     rating: 5,
+    collection: 'kitchen',
+    tag: '',
+    sale: '',
     id: 4,
   },
 
@@ -48,6 +60,9 @@ const products = [
     price: 199.0,
     img: pr5,
     rating: 5,
+    collection: 'kitchen',
+    tag: '',
+    sale: '',
     id: 5,
   },
 
@@ -56,6 +71,9 @@ const products = [
     price: 199.0,
     img: pr6,
     rating: 4,
+    collection: 'kitchen',
+    tag: '',
+    sale: '',
     id: 6,
   },
 
@@ -64,6 +82,9 @@ const products = [
     price: 199.0,
     img: pr7,
     rating: 5,
+    collection: 'kitchen',
+    tag: '',
+    sale: '',
     id: 7,
   },
 
@@ -72,6 +93,9 @@ const products = [
     price: 199.0,
     img: pr8,
     rating: 5,
+    collection: 'dinning',
+    tag: '',
+    sale: '',
     id: 8,
   },
 
@@ -80,6 +104,9 @@ const products = [
     price: 199.0,
     img: pr9,
     rating: 4,
+    collection: 'dinning',
+    tag: '',
+    sale: '',
     id: 9,
   }
 ];
